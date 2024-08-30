@@ -1,0 +1,402 @@
+[
+    {
+        "expression": "3*a**2 + 2",
+        "code": "import numpy as np\ndef _lambdifygenerated(a, x):\n    return 3*a**2 + 2\n"
+    },
+    {
+        "expression": "x*y**3 + 2*x*y**2 + 4*y**3 + 4*y",
+        "code": "import numpy as np\ndef _lambdifygenerated(x, y):\n    return x*y**3 + 2*x*y**2 + 4*y**3 + 4*y\n"
+    },
+    {
+        "expression": "4*a*b*x**2 + 5*b**2*c**3*x**2*y**2",
+        "code": "import numpy as np\ndef _lambdifygenerated(a, x, c, b, y):\n    return 4*a*b*x**2 + 5*b**2*c**3*x**2*y**2\n"
+    },
+    {
+        "expression": "4*b**3*z**3 + b**2*z**3 + 5*b*z**3 + 3*z**2 + 2",
+        "code": "import numpy as np\ndef _lambdifygenerated(z, b):\n    return 4*b**3*z**3 + b**2*z**3 + 5*b*z**3 + 3*z**2 + 2\n"
+    },
+    {
+        "expression": "3*a**3*x**2*y**2 + 2*x**2 + 5",
+        "code": "import numpy as np\ndef _lambdifygenerated(x, y, a):\n    return 3*a**3*x**2*y**2 + 2*x**2 + 5\n"
+    },
+    {
+        "expression": "3*a**3*b*c**2*y**3*z + 3*a**2*b*c**3*y*z**3 + 4*a*b*z**3 + 3*b**2*c**2*y*z**3 + c**3*z + 1",
+        "code": "import numpy as np\ndef _lambdifygenerated(c, b, a, y, z):\n    return 3*a**3*b*c**2*y**3*z + 3*a**2*b*c**3*y*z**3 + 4*a*b*z**3 + 3*b**2*c**2*y*z**3 + c**3*z + 1\n"
+    },
+    {
+        "expression": "5*a*b*c**3*x**2 + 2",
+        "code": "import numpy as np\ndef _lambdifygenerated(b, x, y, a, c):\n    return 5*a*b*c**3*x**2 + 2\n"
+    },
+    {
+        "expression": "5*a**3*c**2*z**3 + 4*a**3*c*x*z**2 + 1",
+        "code": "import numpy as np\ndef _lambdifygenerated(z, x, a, c):\n    return 5*a**3*c**2*z**3 + 4*a**3*c*x*z**2 + 1\n"
+    },
+    {
+        "expression": "b**2*c**2*x*y**2 + 3*b**2*x*y**2*z**2 + 3*b*c**3*x**2*y*z**3 + 2*b*c*x**3*y + 3*c**2*y**3*z + y**3*z**2 + 4",
+        "code": "import numpy as np\ndef _lambdifygenerated(y, c, z, b, x):\n    return b**2*c**2*x*y**2 + 3*b**2*x*y**2*z**2 + 3*b*c**3*x**2*y*z**3 + 2*b*c*x**3*y + 3*c**2*y**3*z + y**3*z**2 + 4\n"
+    },
+    {
+        "expression": "2*a**3*b**3*c**3*x**2*z**2 + a**3*b**3*x*z**3 + 2*a*b**2*c**3*x*z + 5*y**2 + 3",
+        "code": "import numpy as np\ndef _lambdifygenerated(z, a, b, y, c, x):\n    return 2*a**3*b**3*c**3*x**2*z**2 + a**3*b**3*x*z**3 + 2*a*b**2*c**3*x*z + 5*y**2 + 3\n"
+    },
+    {
+        "expression": "3*b**3*z**2 + 1",
+        "code": "import numpy as np\ndef _lambdifygenerated(b, z, a):\n    return 3*b**3*z**2 + 1\n"
+    },
+    {
+        "expression": "3*a**3*c + a**2*y + a*y**2 + a + 3*c**2 + 1",
+        "code": "import numpy as np\ndef _lambdifygenerated(y, a, c):\n    return 3*a**3*c + a**2*y + a*y**2 + a + 3*c**2 + 1\n"
+    },
+    {
+        "expression": "a**3*c**3*x**3 + c + 1",
+        "code": "import numpy as np\ndef _lambdifygenerated(c, a, x):\n    return a**3*c**3*x**3 + c + 1\n"
+    },
+    {
+        "expression": "3*b**3*x**3 + 4",
+        "code": "import numpy as np\ndef _lambdifygenerated(x, b):\n    return 3*b**3*x**3 + 4\n"
+    },
+    {
+        "expression": "5*a**3*b**2*c**2*z**2 + 2*a*b*c**2*z**3 + 1",
+        "code": "import numpy as np\ndef _lambdifygenerated(b, a, c, z):\n    return 5*a**3*b**2*c**2*z**2 + 2*a*b*c**2*z**3 + 1\n"
+    },
+    {
+        "expression": "2*a**3*b*c**3*y**2*z + 5",
+        "code": "import numpy as np\ndef _lambdifygenerated(z, a, c, y, b):\n    return 2*a**3*b*c**3*y**2*z + 5\n"
+    },
+    {
+        "expression": "4*a**3*b*c*x*y**2 + 3*a**2*b**3*c**3*x**3*y**3 + 4*a**2*b*x*y + a*b**3*c**2*x + 2*a*b**2*c**3*x + a*b*c**3*x**3*y**2 + 5",
+        "code": "import numpy as np\ndef _lambdifygenerated(a, y, c, x, b):\n    return 4*a**3*b*c*x*y**2 + 3*a**2*b**3*c**3*x**3*y**3 + 4*a**2*b*x*y + a*b**3*c**2*x + 2*a*b**2*c**3*x + a*b*c**3*x**3*y**2 + 5\n"
+    },
+    {
+        "expression": "2*a**3*b**3*c**2*y*z**3 + 3*a**3*x**2*y**2*z**2 + 2*a**2*b**3*c*x**3 + 1",
+        "code": "import numpy as np\ndef _lambdifygenerated(z, y, x, b, c, a):\n    return 2*a**3*b**3*c**2*y*z**3 + 3*a**3*x**2*y**2*z**2 + 2*a**2*b**3*c*x**3 + 1\n"
+    },
+    {
+        "expression": "a**2*b**3*c**2*z**3 + 3*a**2*b*x*y**2*z**3 + 4*a**2*c*x**2*y**2*z**2 + 5",
+        "code": "import numpy as np\ndef _lambdifygenerated(x, y, z, c, a, b):\n    return a**2*b**3*c**2*z**3 + 3*a**2*b*x*y**2*z**3 + 4*a**2*c*x**2*y**2*z**2 + 5\n"
+    },
+    {
+        "expression": "4*b**2*c*y**3 + 8",
+        "code": "import numpy as np\ndef _lambdifygenerated(c, b, y):\n    return 4*b**2*c*y**3 + 8\n"
+    },
+    {
+        "expression": "3*c**2*z**2 + 3*z + 3",
+        "code": "import numpy as np\ndef _lambdifygenerated(c, z):\n    return 3*c**2*z**2 + 3*z + 3\n"
+    },
+    {
+        "expression": "4*a**3*b*c**3 + 2*a**3*c**2*x**3 + 3*c*y + 4",
+        "code": "import numpy as np\ndef _lambdifygenerated(b, a, x, c, y):\n    return 4*a**3*b*c**3 + 2*a**3*c**2*x**3 + 3*c*y + 4\n"
+    },
+    {
+        "expression": "5*b*z**2 + 1",
+        "code": "import numpy as np\ndef _lambdifygenerated(c, a, z, b):\n    return 5*b*z**2 + 1\n"
+    },
+    {
+        "expression": "4*a**3*y**3*z**2 + 3*a**2*b**3*y*z**2 + 4*a*b**3*x + 3*a*b*x**3*y**3*z**3 + 4",
+        "code": "import numpy as np\ndef _lambdifygenerated(x, z, y, a, b):\n    return 4*a**3*y**3*z**2 + 3*a**2*b**3*y*z**2 + 4*a*b**3*x + 3*a*b*x**3*y**3*z**3 + 4\n"
+    },
+    {
+        "expression": "4*a**3*c**3*z**3 + a**3*c + 3*a**3*z**2 + a**2*c**2*z**2 + 4",
+        "code": "import numpy as np\ndef _lambdifygenerated(c, z, a):\n    return 4*a**3*c**3*z**3 + a**3*c + 3*a**3*z**2 + a**2*c**2*z**2 + 4\n"
+    },
+    {
+        "expression": "5*a**3*b**3*x**3 + 5*a**3*b*x**3 + 4*a**2*b*x**2 + 2*a*b**2*x**2 + 4",
+        "code": "import numpy as np\ndef _lambdifygenerated(x, a, b):\n    return 5*a**3*b**3*x**3 + 5*a**3*b*x**3 + 4*a**2*b*x**2 + 2*a*b**2*x**2 + 4\n"
+    },
+    {
+        "expression": "5*a**2*x**2*z + 4*a**2*x*y**2*z + 5*x**2*z + 3*x + 2*z**2 + 5",
+        "code": "import numpy as np\ndef _lambdifygenerated(z, a, y, x):\n    return 5*a**2*x**2*z + 4*a**2*x*y**2*z + 5*x**2*z + 3*x + 2*z**2 + 5\n"
+    },
+    {
+        "expression": "2*a**2*b**2*z**2 + 1",
+        "code": "import numpy as np\ndef _lambdifygenerated(z, a, x, b):\n    return 2*a**2*b**2*z**2 + 1\n"
+    },
+    {
+        "expression": "4*a**2*c*x*y*z + 4*a**2*y*z**3 + 3*a*b**2*c**2*x**3*y*z**3 + 2*b*c*x**3*y",
+        "code": "import numpy as np\ndef _lambdifygenerated(y, a, x, c, b, z):\n    return 4*a**2*c*x*y*z + 4*a**2*y*z**3 + 3*a*b**2*c**2*x**3*y*z**3 + 2*b*c*x**3*y\n"
+    },
+    {
+        "expression": "4*b**3*z**2 + 1",
+        "code": "import numpy as np\ndef _lambdifygenerated(z, b):\n    return 4*b**3*z**2 + 1\n"
+    },
+    {
+        "expression": "3*c*y + y + 4",
+        "code": "import numpy as np\ndef _lambdifygenerated(z, c, y):\n    return 3*c*y + y + 4\n"
+    },
+    {
+        "expression": "5*a**3*b**3*c**2*x**2*z + 4*a**2*b*c**3*x**3*y**3*z",
+        "code": "import numpy as np\ndef _lambdifygenerated(y, b, x, c, z, a):\n    return 5*a**3*b**3*c**2*x**2*z + 4*a**2*b*c**3*x**3*y**3*z\n"
+    },
+    {
+        "expression": "4*b**3*c**3 + 4*b**2*c + 5*b*c**3 + b*c**2 + b*c + 5*c**3",
+        "code": "import numpy as np\ndef _lambdifygenerated(c, b):\n    return 4*b**3*c**3 + 4*b**2*c + 5*b*c**3 + b*c**2 + b*c + 5*c**3\n"
+    },
+    {
+        "expression": "a**3*b**3*c**3*y**3*z**3 + 5*a**3*b**3*c*y**3 + 4*a**2*b**3*y**3*z**2 + 2*a*b*c*y**2*z**2 + 3*a*b*y*z**2 + 1",
+        "code": "import numpy as np\ndef _lambdifygenerated(c, z, a, y, b):\n    return a**3*b**3*c**3*y**3*z**3 + 5*a**3*b**3*c*y**3 + 4*a**2*b**3*y**3*z**2 + 2*a*b*c*y**2*z**2 + 3*a*b*y*z**2 + 1\n"
+    },
+    {
+        "expression": "3*a**3*c**3*y**3 + a**2*c**2*x**3*y**3 + 5",
+        "code": "import numpy as np\ndef _lambdifygenerated(x, a, c, y):\n    return 3*a**3*c**3*y**3 + a**2*c**2*x**3*y**3 + 5\n"
+    },
+    {
+        "expression": "a**3*x*y**3*z**2 + 5*a*b*c**3*y**2*z**3 + 3*a*b*x**2*y**2*z**3 + b**2*c*x**3 + 5",
+        "code": "import numpy as np\ndef _lambdifygenerated(z, c, b, x, a, y):\n    return a**3*x*y**3*z**2 + 5*a*b*c**3*y**2*z**3 + 3*a*b*x**2*y**2*z**3 + b**2*c*x**3 + 5\n"
+    },
+    {
+        "expression": "4*a**3*b*x**3*y*z**2 + 5*a**2*b**2*c**3*x*y**2 + 3*a*b**2*c**2*x**3*y**2*z**2 + 5*a*c**3*x**3*y**3*z**2 + c**3*y*z**3 + 4*c**3*y*z",
+        "code": "import numpy as np\ndef _lambdifygenerated(c, x, z, a, y, b):\n    return 4*a**3*b*x**3*y*z**2 + 5*a**2*b**2*c**3*x*y**2 + 3*a*b**2*c**2*x**3*y**2*z**2 + 5*a*c**3*x**3*y**3*z**2 + c**3*y*z**3 + 4*c**3*y*z\n"
+    },
+    {
+        "expression": "3*b**3*c**3*x + 2*b**2*c**2*y + 2",
+        "code": "import numpy as np\ndef _lambdifygenerated(c, x, b, y):\n    return 3*b**3*c**3*x + 2*b**2*c**2*y + 2\n"
+    },
+    {
+        "expression": "c**2*x**3 + 5",
+        "code": "import numpy as np\ndef _lambdifygenerated(x, y, c):\n    return c**2*x**3 + 5\n"
+    },
+    {
+        "expression": "a**2*b*c*z**3 + 3",
+        "code": "import numpy as np\ndef _lambdifygenerated(x, z, b, c, a):\n    return a**2*b*c*z**3 + 3\n"
+    },
+    {
+        "expression": "2*a**2*y**3*z**3 + 4*a*c**3*y**2*z**2 + 5*c**2*z**2 + 4*c*y**3*z**2 + 3",
+        "code": "import numpy as np\ndef _lambdifygenerated(c, z, y, a):\n    return 2*a**2*y**3*z**3 + 4*a*c**3*y**2*z**2 + 5*c**2*z**2 + 4*c*y**3*z**2 + 3\n"
+    },
+    {
+        "expression": "b**2*c**3*x**3*y**2 + 3",
+        "code": "import numpy as np\ndef _lambdifygenerated(b, y, x, c, z):\n    return b**2*c**3*x**3*y**2 + 3\n"
+    },
+    {
+        "expression": "a**3*b**2*c**2*x**3 + 2*a**2*b**2*c**3*x**3 + 2",
+        "code": "import numpy as np\ndef _lambdifygenerated(c, b, a, x):\n    return a**3*b**2*c**2*x**3 + 2*a**2*b**2*c**3*x**3 + 2\n"
+    },
+    {
+        "expression": "a**2*c**3 + a**2*c + 1",
+        "code": "import numpy as np\ndef _lambdifygenerated(a, c):\n    return a**2*c**3 + a**2*c + 1\n"
+    },
+    {
+        "expression": "5*x**3*y*z + x**2*y*z + 2*z**2 + 4",
+        "code": "import numpy as np\ndef _lambdifygenerated(z, x, y):\n    return 5*x**3*y*z + x**2*y*z + 2*z**2 + 4\n"
+    },
+    {
+        "expression": "5*a**3*c*x*z**2 + 4",
+        "code": "import numpy as np\ndef _lambdifygenerated(c, x, z, a, y):\n    return 5*a**3*c*x*z**2 + 4\n"
+    },
+    {
+        "expression": "4*a**2*b*x*y**2*z**3 + 4*a*c**3*x*y*z**3 + 5*b**2*x*y**2*z + 5",
+        "code": "import numpy as np\ndef _lambdifygenerated(z, c, a, x, b, y):\n    return 4*a**2*b*x*y**2*z**3 + 4*a*c**3*x*y*z**3 + 5*b**2*x*y**2*z + 5\n"
+    },
+    {
+        "expression": "2*a**3*b**2*c**3*y**2*z**2 + 2*a**3*b*c**3*y*z**3 + a**2*b*c**3*y**3 + 2*b**3*c**2*y*z + 2",
+        "code": "import numpy as np\ndef _lambdifygenerated(a, c, y, z, b):\n    return 2*a**3*b**2*c**3*y**2*z**2 + 2*a**3*b*c**3*y*z**3 + a**2*b*c**3*y**3 + 2*b**3*c**2*y*z + 2\n"
+    },
+    {
+        "expression": "c**3*z + c*y**2*z + 4*y**3*z + 3",
+        "code": "import numpy as np\ndef _lambdifygenerated(z, c, y):\n    return c**3*z + c*y**2*z + 4*y**3*z + 3\n"
+    },
+    {
+        "expression": "a**3*b**3*c**2*x**2*y**2*z**2 + 3*a**3*b**2*c**2*x*z**2 + 2*a**3*c**3*x**2*y**3*z**2 + 4*a*b**2*c**2*x**3*y*z + 3*a*c**2*x**2*z**3 + 4*b**3*c*y**2*z + 4",
+        "code": "import numpy as np\ndef _lambdifygenerated(z, y, x, a, b, c):\n    return a**3*b**3*c**2*x**2*y**2*z**2 + 3*a**3*b**2*c**2*x*z**2 + 2*a**3*c**3*x**2*y**3*z**2 + 4*a*b**2*c**2*x**3*y*z + 3*a*c**2*x**2*z**3 + 4*b**3*c*y**2*z + 4\n"
+    },
+    {
+        "expression": "3*a**3*b**3*y**2 + a**3*c**2*y**2 + 5*a**2*b*y**2 + 2*a*b*c**2*y + 4*b*c**3 + 5",
+        "code": "import numpy as np\ndef _lambdifygenerated(y, b, c, a):\n    return 3*a**3*b**3*y**2 + a**3*c**2*y**2 + 5*a**2*b*y**2 + 2*a*b*c**2*y + 4*b*c**3 + 5\n"
+    },
+    {
+        "expression": "4*b**2*z**3 + b*y**2*z**3 + b*z**2 + 3",
+        "code": "import numpy as np\ndef _lambdifygenerated(z, y, b):\n    return 4*b**2*z**3 + b*y**2*z**3 + b*z**2 + 3\n"
+    },
+    {
+        "expression": "2*a**2*b**2 + 3*a*b**3 + 1",
+        "code": "import numpy as np\ndef _lambdifygenerated(b, a):\n    return 2*a**2*b**2 + 3*a*b**3 + 1\n"
+    },
+    {
+        "expression": "5*a*b**2*x**3*y**3 + 2*a*b*x + 2*b*x*y**2",
+        "code": "import numpy as np\ndef _lambdifygenerated(x, b, y, a):\n    return 5*a*b**2*x**3*y**3 + 2*a*b*x + 2*b*x*y**2\n"
+    },
+    {
+        "expression": "2*a**3*b*c**3*z**2 + 5*a**2*b**3*y**2 + 4*a**2*b*c**2*y*z**2 + 5*a**2*y + 2*b**3*c**3*y**3 + 2",
+        "code": "import numpy as np\ndef _lambdifygenerated(a, c, y, b, z):\n    return 2*a**3*b*c**3*z**2 + 5*a**2*b**3*y**2 + 4*a**2*b*c**2*y*z**2 + 5*a**2*y + 2*b**3*c**3*y**3 + 2\n"
+    },
+    {
+        "expression": "5*c**3*y**2 + 3*c**3 + 4*c**2*y**2 + 4*y**2 + 5*y + 5",
+        "code": "import numpy as np\ndef _lambdifygenerated(c, y):\n    return 5*c**3*y**2 + 3*c**3 + 4*c**2*y**2 + 4*y**2 + 5*y + 5\n"
+    },
+    {
+        "expression": "2*a*c**2*x**2*z + 2*a*x**2*z**2 + 5",
+        "code": "import numpy as np\ndef _lambdifygenerated(x, c, a, y, z):\n    return 2*a*c**2*x**2*z + 2*a*x**2*z**2 + 5\n"
+    },
+    {
+        "expression": "b**3*c**2*y**3 + 2*b**2 + c*y + 4",
+        "code": "import numpy as np\ndef _lambdifygenerated(b, y, c):\n    return b**3*c**2*y**3 + 2*b**2 + c*y + 4\n"
+    },
+    {
+        "expression": "5*a**2*c*x**2*y**3*z**3 + 5*a*b**3*c**2*y*z + 5*a*c**2*y**2*z**2 + 2",
+        "code": "import numpy as np\ndef _lambdifygenerated(z, x, a, y, b, c):\n    return 5*a**2*c*x**2*y**3*z**3 + 5*a*b**3*c**2*y*z + 5*a*c**2*y**2*z**2 + 2\n"
+    },
+    {
+        "expression": "9*c**2 + 8",
+        "code": "import numpy as np\ndef _lambdifygenerated(b, c):\n    return 9*c**2 + 8\n"
+    },
+    {
+        "expression": "a**3*b**2*c**2*x**3*y**3*z**3 + a**3*c*x**3*y**2*z + 5*a**2*b*c**2*y**2 + 3*b**3*c**2*x**2*y**3*z + 3*b**2*c*z + b*c**3*x**2*y*z**2",
+        "code": "import numpy as np\ndef _lambdifygenerated(y, z, b, a, c, x):\n    return a**3*b**2*c**2*x**3*y**3*z**3 + a**3*c*x**3*y**2*z + 5*a**2*b*c**2*y**2 + 3*b**3*c**2*x**2*y**3*z + 3*b**2*c*z + b*c**3*x**2*y*z**2\n"
+    },
+    {
+        "expression": "2*a**3*b**3*x**2*y**3 + 4*a**3*b**2*x**3*y**2*z**2 + 2*b**2*x*z**3",
+        "code": "import numpy as np\ndef _lambdifygenerated(a, y, x, b, z):\n    return 2*a**3*b**3*x**2*y**3 + 4*a**3*b**2*x**3*y**2*z**2 + 2*b**2*x*z**3\n"
+    },
+    {
+        "expression": "3*c**2*x + 5*c + 1",
+        "code": "import numpy as np\ndef _lambdifygenerated(c, a, x):\n    return 3*c**2*x + 5*c + 1\n"
+    },
+    {
+        "expression": "c**2*x*z + c*x**2*z**2 + x**2 + z + 4",
+        "code": "import numpy as np\ndef _lambdifygenerated(c, x, z):\n    return c**2*x*z + c*x**2*z**2 + x**2 + z + 4\n"
+    },
+    {
+        "expression": "4*a**3*b*c**3*x*y**3 + 2*a*b**3*x**3*y**3*z**2 + b**3*c**3*x**2*y**2 + 2",
+        "code": "import numpy as np\ndef _lambdifygenerated(x, y, z, a, b, c):\n    return 4*a**3*b*c**3*x*y**3 + 2*a*b**3*x**3*y**3*z**2 + b**3*c**3*x**2*y**2 + 2\n"
+    },
+    {
+        "expression": "4*a**3*x**3*z**2 + 3*a**2*x**3*z**2 + 5*a*b**2*x**3*z**2 + 2*a*b*z**3 + 2",
+        "code": "import numpy as np\ndef _lambdifygenerated(z, x, b, a):\n    return 4*a**3*x**3*z**2 + 3*a**2*x**3*z**2 + 5*a*b**2*x**3*z**2 + 2*a*b*z**3 + 2\n"
+    },
+    {
+        "expression": "a**3*b**2*c + 4*b*c**3*z**2 + 5",
+        "code": "import numpy as np\ndef _lambdifygenerated(x, z, c, a, b):\n    return a**3*b**2*c + 4*b*c**3*z**2 + 5\n"
+    },
+    {
+        "expression": "a**3*b**3*y**3 + 3*a**2*b**3*y**3 + 1",
+        "code": "import numpy as np\ndef _lambdifygenerated(b, a, c, y):\n    return a**3*b**3*y**3 + 3*a**2*b**3*y**3 + 1\n"
+    },
+    {
+        "expression": "3*a**3*b**2*x**3*y**3*z**3 + a*c**2*x**2*y**2*z + 5",
+        "code": "import numpy as np\ndef _lambdifygenerated(x, z, y, a, b, c):\n    return 3*a**3*b**2*x**3*y**3*z**3 + a*c**2*x**2*y**2*z + 5\n"
+    },
+    {
+        "expression": "3*a**3*b*c**3*x**3*y**2*z**2 + 3*a**3*c*x**2*y**2*z + 3*a**2*b**2*c**2*x*y*z**2 + 2*a*b**2*y**3*z**2 + 2*a*b*c**3*x*y**2*z",
+        "code": "import numpy as np\ndef _lambdifygenerated(c, a, y, b, z, x):\n    return 3*a**3*b*c**3*x**3*y**2*z**2 + 3*a**3*c*x**2*y**2*z + 3*a**2*b**2*c**2*x*y*z**2 + 2*a*b**2*y**3*z**2 + 2*a*b*c**3*x*y**2*z\n"
+    },
+    {
+        "expression": "4*a**3*b**3*z**3 + 3*a**3*b*x**2*y*z**3 + 2",
+        "code": "import numpy as np\ndef _lambdifygenerated(x, b, a, z, y):\n    return 4*a**3*b**3*z**3 + 3*a**3*b*x**2*y*z**3 + 2\n"
+    },
+    {
+        "expression": "2*a**3*y**3 + a**3*z + 3*a*z**2 + 5*y",
+        "code": "import numpy as np\ndef _lambdifygenerated(y, a, z):\n    return 2*a**3*y**3 + a**3*z + 3*a*z**2 + 5*y\n"
+    },
+    {
+        "expression": "b**3 + 7*b*y**3 + 3*b*y**2 + 4*b + 5",
+        "code": "import numpy as np\ndef _lambdifygenerated(y, b):\n    return b**3 + 7*b*y**3 + 3*b*y**2 + 4*b + 5\n"
+    },
+    {
+        "expression": "10",
+        "code": "import numpy as np\ndef _lambdifygenerated(a, c):\n    return 10\n"
+    },
+    {
+        "expression": "5*a**3*b**2*c*x**2*y**2*z**3 + 4*a**2*b**3*c**3*x*y + 2*a**2*b*x + 3*a*x**2*y**2*z**3 + 2",
+        "code": "import numpy as np\ndef _lambdifygenerated(b, z, c, x, y, a):\n    return 5*a**3*b**2*c*x**2*y**2*z**3 + 4*a**2*b**3*c**3*x*y + 2*a**2*b*x + 3*a*x**2*y**2*z**3 + 2\n"
+    },
+    {
+        "expression": "4*a**2*x**3*y**3 + 3",
+        "code": "import numpy as np\ndef _lambdifygenerated(a, x, y):\n    return 4*a**2*x**3*y**3 + 3\n"
+    },
+    {
+        "expression": "5*a**2*b**3*c**3*y + 4*a*b**3*c*x**3*z**3 + 2*a*b*c**3*x**2*y + 3*a*b*x*y*z**3 + 2*a*x*y**3*z**3",
+        "code": "import numpy as np\ndef _lambdifygenerated(a, c, y, z, x, b):\n    return 5*a**2*b**3*c**3*y + 4*a*b**3*c*x**3*z**3 + 2*a*b*c**3*x**2*y + 3*a*b*x*y*z**3 + 2*a*x*y**3*z**3\n"
+    },
+    {
+        "expression": "2*a**3*b**3*c*y*z**2 + 5*a**2*b**3*c**3*x**2 + 5*a*b**2*c*y**2 + 5*a*c*x*y**2*z**3 + 4*b**3*c*x**3*z",
+        "code": "import numpy as np\ndef _lambdifygenerated(b, a, x, z, c, y):\n    return 2*a**3*b**3*c*y*z**2 + 5*a**2*b**3*c**3*x**2 + 5*a*b**2*c*y**2 + 5*a*c*x*y**2*z**3 + 4*b**3*c*x**3*z\n"
+    },
+    {
+        "expression": "5*b**3*z**3 + b**2*z**3 + 3*b*z**3 + 4*z + 5",
+        "code": "import numpy as np\ndef _lambdifygenerated(z, b):\n    return 5*b**3*z**3 + b**2*z**3 + 3*b*z**3 + 4*z + 5\n"
+    },
+    {
+        "expression": "a**2*b**3*c**2*x**3*y**2*z**3 + 4",
+        "code": "import numpy as np\ndef _lambdifygenerated(b, a, z, c, x, y):\n    return a**2*b**3*c**2*x**3*y**2*z**3 + 4\n"
+    },
+    {
+        "expression": "3*b**3*x**2*y**2 + 2*b**2*x**2*y**3 + 4*b**2*x*y**2 + 2",
+        "code": "import numpy as np\ndef _lambdifygenerated(y, x, b):\n    return 3*b**3*x**2*y**2 + 2*b**2*x**2*y**3 + 4*b**2*x*y**2 + 2\n"
+    },
+    {
+        "expression": "4*b*c**2*x**3*y**3 + 1",
+        "code": "import numpy as np\ndef _lambdifygenerated(y, x, c, b):\n    return 4*b*c**2*x**3*y**3 + 1\n"
+    },
+    {
+        "expression": "3*a*b**3*y*z + 2*b**2*y**3*z**3 + 4",
+        "code": "import numpy as np\ndef _lambdifygenerated(c, y, z, b, a):\n    return 3*a*b**3*y*z + 2*b**2*y**3*z**3 + 4\n"
+    },
+    {
+        "expression": "a**3*b**2*c**2*x*y**3*z**3 + 2*a**3*b*c**2*x**2*y*z**2 + 3*a**2*b**2*c**3*x*y**2*z + 4*a*b**3*c*y + 4*b**3*c**3*x**2*y*z + 4",
+        "code": "import numpy as np\ndef _lambdifygenerated(b, c, x, a, z, y):\n    return a**3*b**2*c**2*x*y**3*z**3 + 2*a**3*b*c**2*x**2*y*z**2 + 3*a**2*b**2*c**3*x*y**2*z + 4*a*b**3*c*y + 4*b**3*c**3*x**2*y*z + 4\n"
+    },
+    {
+        "expression": "4*a**2 + a*c + a*z**2 + 4",
+        "code": "import numpy as np\ndef _lambdifygenerated(c, z, a):\n    return 4*a**2 + a*c + a*z**2 + 4\n"
+    },
+    {
+        "expression": "5*a*b**2*x*y**3*z + 3*a*b*y**2*z + 5",
+        "code": "import numpy as np\ndef _lambdifygenerated(a, z, x, b, y):\n    return 5*a*b**2*x*y**3*z + 3*a*b*y**2*z + 5\n"
+    },
+    {
+        "expression": "b**3*x**2*y**3 + 2*x**2*y + 3",
+        "code": "import numpy as np\ndef _lambdifygenerated(y, x, b):\n    return b**3*x**2*y**3 + 2*x**2*y + 3\n"
+    },
+    {
+        "expression": "4*a**3*y*z**2 + a**3*z**3 + 5*a**3*z**2 + 3*a**2*c**2*y**3*z**2 + 3",
+        "code": "import numpy as np\ndef _lambdifygenerated(a, z, c, y):\n    return 4*a**3*y*z**2 + a**3*z**3 + 5*a**3*z**2 + 3*a**2*c**2*y**3*z**2 + 3\n"
+    },
+    {
+        "expression": "5*c*y**3 + 5*c*y + 5*y",
+        "code": "import numpy as np\ndef _lambdifygenerated(y, c):\n    return 5*c*y**3 + 5*c*y + 5*y\n"
+    },
+    {
+        "expression": "4*a**3*c**3*x*y**3 + 2*b*c*x**3*y**2 + 5*b*x**2*y**2 + 2*c**3*x**3*y**3 + 3*x**3*y**3",
+        "code": "import numpy as np\ndef _lambdifygenerated(a, y, b, x, c):\n    return 4*a**3*c**3*x*y**3 + 2*b*c*x**3*y**2 + 5*b*x**2*y**2 + 2*c**3*x**3*y**3 + 3*x**3*y**3\n"
+    },
+    {
+        "expression": "3*a**3*b*c**3*x**2*y**3 + 4*a**2*b**2*c**3*x**2*y**2 + 5*a**2*b**2*c*x*y**3 + 5*a*b*c**3*x*y**3 + 5*a*c*x**3*y**3 + 4",
+        "code": "import numpy as np\ndef _lambdifygenerated(y, x, a, c, b):\n    return 3*a**3*b*c**3*x**2*y**3 + 4*a**2*b**2*c**3*x**2*y**2 + 5*a**2*b**2*c*x*y**3 + 5*a*b*c**3*x*y**3 + 5*a*c*x**3*y**3 + 4\n"
+    },
+    {
+        "expression": "3*a*b*c**2*x*y*z + 3*b**2*x**2*y*z**3 + 2*c*x**3*y*z**3",
+        "code": "import numpy as np\ndef _lambdifygenerated(z, y, a, x, c, b):\n    return 3*a*b*c**2*x*y*z + 3*b**2*x**2*y*z**3 + 2*c*x**3*y*z**3\n"
+    },
+    {
+        "expression": "c**2*y**2*z + 5*c**2*y*z",
+        "code": "import numpy as np\ndef _lambdifygenerated(y, z, c):\n    return c**2*y**2*z + 5*c**2*y*z\n"
+    },
+    {
+        "expression": "4*a*b**2*y**2*z**3 + 4*a*b**2*y*z**2 + 4*b**3*y*z**3 + 5",
+        "code": "import numpy as np\ndef _lambdifygenerated(a, y, b, z):\n    return 4*a*b**2*y**2*z**3 + 4*a*b**2*y*z**2 + 4*b**3*y*z**3 + 5\n"
+    },
+    {
+        "expression": "4*c*x**3*y**2 + 4*x**2*y + 3*y**3",
+        "code": "import numpy as np\ndef _lambdifygenerated(y, c, x):\n    return 4*c*x**3*y**2 + 4*x**2*y + 3*y**3\n"
+    },
+    {
+        "expression": "2*z**2 + 5",
+        "code": "import numpy as np\ndef _lambdifygenerated(z, c):\n    return 2*z**2 + 5\n"
+    },
+    {
+        "expression": "5*b**3*c**3*y**3*z**2 + 3*b*z**2 + 2*c*y**3*z**2 + 2",
+        "code": "import numpy as np\ndef _lambdifygenerated(c, z, y, b):\n    return 5*b**3*c**3*y**3*z**2 + 3*b*z**2 + 2*c*y**3*z**2 + 2\n"
+    },
+    {
+        "expression": "5*a**3*b*z + 4*a**2*b**3*y*z**2 + 4*a**2*b*y*z**2 + 2*a**2*b + a**2*z + 1",
+        "code": "import numpy as np\ndef _lambdifygenerated(z, a, y, b):\n    return 5*a**3*b*z + 4*a**2*b**3*y*z**2 + 4*a**2*b*y*z**2 + 2*a**2*b + a**2*z + 1\n"
+    },
+    {
+        "expression": "3*b**2*c + 5*c*y + 1",
+        "code": "import numpy as np\ndef _lambdifygenerated(y, b, c):\n    return 3*b**2*c + 5*c*y + 1\n"
+    },
+    {
+        "expression": "a**3*b**2*x**2*y**3*z**3 + 3*a**2*b**3*x**2*y*z + 2*a**2*b*y*z + a*b*x**3*y*z**2 + 1",
+        "code": "import numpy as np\ndef _lambdifygenerated(b, y, z, a, x):\n    return a**3*b**2*x**2*y**3*z**3 + 3*a**2*b**3*x**2*y*z + 2*a**2*b*y*z + a*b*x**3*y*z**2 + 1\n"
+    }
+]

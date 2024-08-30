@@ -1,0 +1,402 @@
+[
+    {
+        "expression": "2*csc(a**2*b**3*c**2*x**2*y**3) + 5*csc(a**3*b**2*c*x*y) + 4*sec(a**3*b**3*c**3*x**3*y**2)",
+        "code": "import numpy as np\nfrom sympy import sec, csc\ndef _lambdifygenerated(a, b, y, x, c):\n    return 2*(sin(a**2*b**3*c**2*x**2*y**3)**(-1.0)) + 5*(sin(a**3*b**2*c*x*y)**(-1.0)) + 4*(cos(a**3*b**3*c**3*x**3*y**2)**(-1.0))\n"
+    },
+    {
+        "expression": "2*tan(a*b**2*c**2*x*y**3) + cot(a**2*b**3*c*x*y**2) + 2*cot(a**2*b**3*c**3*x**2*y**2) + 3*csc(a**2*b*c*x**2*y)",
+        "code": "import numpy as np\nfrom sympy import cot, tan, csc\ndef _lambdifygenerated(c, x, a, b, y):\n    return 2*tan(a*b**2*c**2*x*y**3) + (tan(a**2*b**3*c*x*y**2)**(-1.0)) + 2*(tan(a**2*b**3*c**3*x**2*y**2)**(-1.0)) + 3*(sin(a**2*b*c*x**2*y)**(-1.0))\n"
+    },
+    {
+        "expression": "4*cot(a*z**2) + 1",
+        "code": "import numpy as np\nfrom sympy import cot\ndef _lambdifygenerated(z, a):\n    return 4*(tan(a*z**2)**(-1.0)) + 1\n"
+    },
+    {
+        "expression": "2*sin(c*y) + 5*sin(c*y**3) + 3*cos(c**3*y) + 2",
+        "code": "import numpy as np\nfrom sympy import cos, sin\ndef _lambdifygenerated(y, c):\n    return 2*sin(c*y) + 5*sin(c*y**3) + 3*cos(c**3*y) + 2\n"
+    },
+    {
+        "expression": "2*cos(a*c*x**3) + 5*tan(a**2*c*x**2) + 3*cot(a*c**2*x) + 3*csc(a**3*c*x**2)",
+        "code": "import numpy as np\nfrom sympy import cos, cot, tan, csc\ndef _lambdifygenerated(c, a, x):\n    return 2*cos(a*c*x**3) + 5*tan(a**2*c*x**2) + 3*(tan(a*c**2*x)**(-1.0)) + 3*(sin(a**3*c*x**2)**(-1.0))\n"
+    },
+    {
+        "expression": "4*cos(a*x**3) + 5*tan(a**2*x**2) + csc(a*x**2) + 4*sec(a**2*x**3)",
+        "code": "import numpy as np\nfrom sympy import cos, tan, sec, csc\ndef _lambdifygenerated(x, a):\n    return 4*cos(a*x**3) + 5*tan(a**2*x**2) + (sin(a*x**2)**(-1.0)) + 4*(cos(a**2*x**3)**(-1.0))\n"
+    },
+    {
+        "expression": "sec(a**3*x) + 2*sec(a**3*x**3) + 3",
+        "code": "import numpy as np\nfrom sympy import sec\ndef _lambdifygenerated(a, x):\n    return (cos(a**3*x)**(-1.0)) + 2*(cos(a**3*x**3)**(-1.0)) + 3\n"
+    },
+    {
+        "expression": "2*sin(b**2*c**3*x**2*z**2) + 4*tan(b*c*x**2*z) + 5*csc(b*c*x**3*z**2) + 3",
+        "code": "import numpy as np\nfrom sympy import sin, tan, csc\ndef _lambdifygenerated(x, c, b, z):\n    return 2*sin(b**2*c**3*x**2*z**2) + 4*tan(b*c*x**2*z) + 5*(sin(b*c*x**3*z**2)**(-1.0)) + 3\n"
+    },
+    {
+        "expression": "5*csc(a**2*b*c**3*x**3*y**2*z) + 1",
+        "code": "import numpy as np\nfrom sympy import csc\ndef _lambdifygenerated(c, b, a, y, z, x):\n    return 5*(sin(a**2*b*c**3*x**3*y**2*z)**(-1.0)) + 1\n"
+    },
+    {
+        "expression": "5*tan(b*c*x*z) + 4",
+        "code": "import numpy as np\nfrom sympy import tan\ndef _lambdifygenerated(b, c, z, x):\n    return 5*tan(b*c*x*z) + 4\n"
+    },
+    {
+        "expression": "5*sec(a**3*b*x*y*z)",
+        "code": "import numpy as np\nfrom sympy import sec\ndef _lambdifygenerated(b, a, y, x, z):\n    return 5*(cos(a**3*b*x*y*z)**(-1.0))\n"
+    },
+    {
+        "expression": "4*tan(b**2*c**2*x*y**3*z) + tan(b**2*c**3*x**3*y*z**3) + 4*cot(b**2*c**2*x**2*y*z**2) + 1",
+        "code": "import numpy as np\nfrom sympy import cot, tan\ndef _lambdifygenerated(c, z, b, y, x):\n    return 4*tan(b**2*c**2*x*y**3*z) + tan(b**2*c**3*x**3*y*z**3) + 4*(tan(b**2*c**2*x**2*y*z**2)**(-1.0)) + 1\n"
+    },
+    {
+        "expression": "3*cos(a**2*b**3*c**2*x**2*y**2*z**2) + 2*tan(a*b**2*c**2*x**3*y*z**2) + 3*cot(a*b*c**3*x*y**2*z**2) + 4*cot(a**2*b**2*c**3*x**3*y**2*z) + 3*csc(a*b**2*c**3*x*y**3*z**2)",
+        "code": "import numpy as np\nfrom sympy import cos, cot, tan, csc\ndef _lambdifygenerated(c, a, b, y, z, x):\n    return 3*cos(a**2*b**3*c**2*x**2*y**2*z**2) + 2*tan(a*b**2*c**2*x**3*y*z**2) + 3*(tan(a*b*c**3*x*y**2*z**2)**(-1.0)) + 4*(tan(a**2*b**2*c**3*x**3*y**2*z)**(-1.0)) + 3*(sin(a*b**2*c**3*x*y**3*z**2)**(-1.0))\n"
+    },
+    {
+        "expression": "3*cot(a*b**3*c*x**2) + 3*csc(a**2*b**2*c**3*x**2) + 2*csc(a**3*b**2*c**3*x**3) + 5",
+        "code": "import numpy as np\nfrom sympy import cot, csc\ndef _lambdifygenerated(c, x, b, a):\n    return 3*(tan(a*b**3*c*x**2)**(-1.0)) + 3*(sin(a**2*b**2*c**3*x**2)**(-1.0)) + 2*(sin(a**3*b**2*c**3*x**3)**(-1.0)) + 5\n"
+    },
+    {
+        "expression": "4*cos(a**3*b*c**2*x**2) + 5*cos(a**3*b**2*c**2*x) + 5*sec(a*b*c**2*x**2) + 4",
+        "code": "import numpy as np\nfrom sympy import cos, sec\ndef _lambdifygenerated(c, x, b, a):\n    return 4*cos(a**3*b*c**2*x**2) + 5*cos(a**3*b**2*c**2*x) + 5*(cos(a*b*c**2*x**2)**(-1.0)) + 4\n"
+    },
+    {
+        "expression": "3*cos(a**2*b*c**3*x**2*y**3*z**2) + 2*cos(a**2*b**2*c**2*x**2*y*z**3) + cos(a**3*b**2*c**3*x**2*y**3*z**3) + 4*sec(a**2*b*c*x**2*y**3*z**3) + 5",
+        "code": "import numpy as np\nfrom sympy import cos, sec\ndef _lambdifygenerated(a, y, c, b, z, x):\n    return 3*cos(a**2*b*c**3*x**2*y**3*z**2) + 2*cos(a**2*b**2*c**2*x**2*y*z**3) + cos(a**3*b**2*c**3*x**2*y**3*z**3) + 4*(cos(a**2*b*c*x**2*y**3*z**3)**(-1.0)) + 5\n"
+    },
+    {
+        "expression": "5*cot(y**3*z**2) + 1",
+        "code": "import numpy as np\nfrom sympy import cot\ndef _lambdifygenerated(y, z):\n    return 5*(tan(y**3*z**2)**(-1.0)) + 1\n"
+    },
+    {
+        "expression": "5*cos(a*c**2*x**3*y*z) + 3*cot(a*c*x**2*y**3*z**3) + csc(a*c**2*x*y**3*z**3) + csc(a**2*c*x*y*z**3) + 5",
+        "code": "import numpy as np\nfrom sympy import cos, cot, csc\ndef _lambdifygenerated(x, y, a, c, z):\n    return 5*cos(a*c**2*x**3*y*z) + 3*(tan(a*c*x**2*y**3*z**3)**(-1.0)) + (sin(a*c**2*x*y**3*z**3)**(-1.0)) + (sin(a**2*c*x*y*z**3)**(-1.0)) + 5\n"
+    },
+    {
+        "expression": "3*sin(c*z**3) + 5*cos(c**3*z**2) + 2*tan(c**3*z**3) + 5*csc(c*z**2)",
+        "code": "import numpy as np\nfrom sympy import cos, sin, tan, csc\ndef _lambdifygenerated(z, c):\n    return 3*sin(c*z**3) + 5*cos(c**3*z**2) + 2*tan(c**3*z**3) + 5*(sin(c*z**2)**(-1.0))\n"
+    },
+    {
+        "expression": "5*sin(a**3*b**3*c**2*x**3*y**2*z) + tan(a*b*c**2*x*y**3*z**3) + 3*csc(a**3*b**3*c**3*x*y*z**2) + 5*sec(a**3*b*c**3*x**3*y**2*z) + 5",
+        "code": "import numpy as np\nfrom sympy import sin, tan, sec, csc\ndef _lambdifygenerated(y, x, b, z, c, a):\n    return 5*sin(a**3*b**3*c**2*x**3*y**2*z) + tan(a*b*c**2*x*y**3*z**3) + 3*(sin(a**3*b**3*c**3*x*y*z**2)**(-1.0)) + 5*(cos(a**3*b*c**3*x**3*y**2*z)**(-1.0)) + 5\n"
+    },
+    {
+        "expression": "5*sin(a*b**3*c*x**3*y**2*z**2) + 4*cos(a**3*b*c*x**2*y**3*z**3) + 2*csc(a*b**2*c**2*x**3*y**2*z**2) + csc(a**2*b*c**3*x**3*y**2*z**3) + 2*sec(a*b**3*c**2*x**2*y*z**2) + 5",
+        "code": "import numpy as np\nfrom sympy import cos, sin, sec, csc\ndef _lambdifygenerated(y, z, a, b, c, x):\n    return 5*sin(a*b**3*c*x**3*y**2*z**2) + 4*cos(a**3*b*c*x**2*y**3*z**3) + 2*(sin(a*b**2*c**2*x**3*y**2*z**2)**(-1.0)) + (sin(a**2*b*c**3*x**3*y**2*z**3)**(-1.0)) + 2*(cos(a*b**3*c**2*x**2*y*z**2)**(-1.0)) + 5\n"
+    },
+    {
+        "expression": "2*sin(a**2*b**3*x**3*y**3*z) + 2*tan(a*b**2*x**2*y**3*z**2) + 2*tan(a*b**3*x**2*y*z) + 3*cot(a**3*b*x*y**2*z**2) + csc(a**3*b**3*x*y**2*z**3)",
+        "code": "import numpy as np\nfrom sympy import cot, tan, sin, csc\ndef _lambdifygenerated(z, x, b, a, y):\n    return 2*sin(a**2*b**3*x**3*y**3*z) + 2*tan(a*b**2*x**2*y**3*z**2) + 2*tan(a*b**3*x**2*y*z) + 3*(tan(a**3*b*x*y**2*z**2)**(-1.0)) + (sin(a**3*b**3*x*y**2*z**3)**(-1.0))\n"
+    },
+    {
+        "expression": "4*cos(a**2*b**2*c**3*x*z**2) + 3*tan(a**2*b*c**2*x*z**2) + cot(a**3*b**3*c**3*x*z**3) + 5*sec(a*b**3*c**3*x*z**3) + 4",
+        "code": "import numpy as np\nfrom sympy import cos, cot, tan, sec\ndef _lambdifygenerated(x, z, b, a, c):\n    return 4*cos(a**2*b**2*c**3*x*z**2) + 3*tan(a**2*b*c**2*x*z**2) + (tan(a**3*b**3*c**3*x*z**3)**(-1.0)) + 5*(cos(a*b**3*c**3*x*z**3)**(-1.0)) + 4\n"
+    },
+    {
+        "expression": "3*sin(a**2*b**2*c*x**3*z) + 4*cot(a**2*b**3*c*x*z**2) + 5*csc(a*b*c**2*x**3*z) + 5*sec(a**3*b**2*c**3*x*z**2) + 4",
+        "code": "import numpy as np\nfrom sympy import cot, sin, sec, csc\ndef _lambdifygenerated(a, b, z, c, x):\n    return 3*sin(a**2*b**2*c*x**3*z) + 4*(tan(a**2*b**3*c*x*z**2)**(-1.0)) + 5*(sin(a*b*c**2*x**3*z)**(-1.0)) + 5*(cos(a**3*b**2*c**3*x*z**2)**(-1.0)) + 4\n"
+    },
+    {
+        "expression": "cos(a**3*b**2*c**2*x*y**3*z**2)",
+        "code": "import numpy as np\nfrom sympy import cos\ndef _lambdifygenerated(y, x, b, z, a, c):\n    return cos(a**3*b**2*c**2*x*y**3*z**2)\n"
+    },
+    {
+        "expression": "tan(a**3*b*c**3*y**2*z) + 4*csc(a**2*b*c**2*y*z) + 2",
+        "code": "import numpy as np\nfrom sympy import tan, csc\ndef _lambdifygenerated(b, z, a, y, c):\n    return tan(a**3*b*c**3*y**2*z) + 4*(sin(a**2*b*c**2*y*z)**(-1.0)) + 2\n"
+    },
+    {
+        "expression": "4*cot(c*x**3*y**3) + 3",
+        "code": "import numpy as np\nfrom sympy import cot\ndef _lambdifygenerated(c, x, y):\n    return 4*(tan(c*x**3*y**3)**(-1.0)) + 3\n"
+    },
+    {
+        "expression": "5*cos(a*b**3*y) + 2*cot(a**3*b*y) + 3*csc(a**3*b*y**2) + 5*csc(a**3*b**2*y) + sec(a**3*b**2*y) + 4",
+        "code": "import numpy as np\nfrom sympy import cos, cot, sec, csc\ndef _lambdifygenerated(a, y, b):\n    return 5*cos(a*b**3*y) + 2*(tan(a**3*b*y)**(-1.0)) + 3*(sin(a**3*b*y**2)**(-1.0)) + 5*(sin(a**3*b**2*y)**(-1.0)) + (cos(a**3*b**2*y)**(-1.0)) + 4\n"
+    },
+    {
+        "expression": "5*tan(y**3*z**2) + 2*sec(y*z)",
+        "code": "import numpy as np\nfrom sympy import tan, sec\ndef _lambdifygenerated(y, z):\n    return 5*tan(y**3*z**2) + 2*(cos(y*z)**(-1.0))\n"
+    },
+    {
+        "expression": "2*cot(a*b**3*c*x*y**3*z) + 2*sec(a**3*b**3*c**2*x**3*y*z**2) + 4",
+        "code": "import numpy as np\nfrom sympy import cot, sec\ndef _lambdifygenerated(x, b, y, z, c, a):\n    return 2*(tan(a*b**3*c*x*y**3*z)**(-1.0)) + 2*(cos(a**3*b**3*c**2*x**3*y*z**2)**(-1.0)) + 4\n"
+    },
+    {
+        "expression": "2*tan(a*x) + 3*sec(a*x**2) + 5",
+        "code": "import numpy as np\nfrom sympy import tan, sec\ndef _lambdifygenerated(x, a):\n    return 2*tan(a*x) + 3*(cos(a*x**2)**(-1.0)) + 5\n"
+    },
+    {
+        "expression": "5*cot(a**2*b*c**2*x**2*y*z) + 5*cot(a**3*b**2*c*x**3*y**2*z**3) + 2*sec(a*b**2*c**3*x**2*y**3*z)",
+        "code": "import numpy as np\nfrom sympy import cot, sec\ndef _lambdifygenerated(y, x, a, z, c, b):\n    return 5*(tan(a**2*b*c**2*x**2*y*z)**(-1.0)) + 5*(tan(a**3*b**2*c*x**3*y**2*z**3)**(-1.0)) + 2*(cos(a*b**2*c**3*x**2*y**3*z)**(-1.0))\n"
+    },
+    {
+        "expression": "3*sin(a*b**3*c**2*x**3) + 4*cos(a**2*b**2*c**3*x**2) + 4*cos(a**3*b**3*c**2*x) + 5*csc(a*b**2*c**2*x) + 4*csc(a**3*b**3*c**2*x**3) + 3*sec(a*b**2*c*x**2) + 4",
+        "code": "import numpy as np\nfrom sympy import cos, sin, sec, csc\ndef _lambdifygenerated(c, a, x, b):\n    return 3*sin(a*b**3*c**2*x**3) + 4*cos(a**2*b**2*c**3*x**2) + 4*cos(a**3*b**3*c**2*x) + 5*(sin(a*b**2*c**2*x)**(-1.0)) + 4*(sin(a**3*b**3*c**2*x**3)**(-1.0)) + 3*(cos(a*b**2*c*x**2)**(-1.0)) + 4\n"
+    },
+    {
+        "expression": "5*cos(a*b**2) + cos(a**3*b**3) + 5*tan(a**2*b**3) + 3*csc(a**3*b) + 4*sec(a**2*b**2) + 5",
+        "code": "import numpy as np\nfrom sympy import cos, tan, sec, csc\ndef _lambdifygenerated(a, b):\n    return 5*cos(a*b**2) + cos(a**3*b**3) + 5*tan(a**2*b**3) + 3*(sin(a**3*b)**(-1.0)) + 4*(cos(a**2*b**2)**(-1.0)) + 5\n"
+    },
+    {
+        "expression": "cos(a**2*b*c**2*x**3*y**2) + 5*tan(a**3*b**3*c**2*x**3*y**3) + 5*csc(a*b**3*c**2*x*y) + 5*csc(a**2*b**2*c*x*y**3) + 5",
+        "code": "import numpy as np\nfrom sympy import cos, tan, csc\ndef _lambdifygenerated(x, a, c, y, b):\n    return cos(a**2*b*c**2*x**3*y**2) + 5*tan(a**3*b**3*c**2*x**3*y**3) + 5*(sin(a*b**3*c**2*x*y)**(-1.0)) + 5*(sin(a**2*b**2*c*x*y**3)**(-1.0)) + 5\n"
+    },
+    {
+        "expression": "4*sin(a*b**3*c**3*x*y**3) + 3*csc(a*b**3*c*x*y**2) + 1",
+        "code": "import numpy as np\nfrom sympy import sin, csc\ndef _lambdifygenerated(y, b, c, x, a):\n    return 4*sin(a*b**3*c**3*x*y**3) + 3*(sin(a*b**3*c*x*y**2)**(-1.0)) + 1\n"
+    },
+    {
+        "expression": "2*cos(a*b**2*c*x*y**3*z) + cos(a*b**2*c**3*x*y**2*z**3) + 2*cos(a**3*b**3*c**3*x*y*z**2) + csc(a*b*c**2*x*y*z) + 3*csc(a**3*b**3*c**2*x*y**3*z**3) + 5",
+        "code": "import numpy as np\nfrom sympy import cos, csc\ndef _lambdifygenerated(c, a, b, x, y, z):\n    return 2*cos(a*b**2*c*x*y**3*z) + cos(a*b**2*c**3*x*y**2*z**3) + 2*cos(a**3*b**3*c**3*x*y*z**2) + (sin(a*b*c**2*x*y*z)**(-1.0)) + 3*(sin(a**3*b**3*c**2*x*y**3*z**3)**(-1.0)) + 5\n"
+    },
+    {
+        "expression": "3*cos(a*b**3*y) + 4*cos(a**2*b*y) + 4*cot(a*b*y**2) + 4*csc(a**2*b**3*y**3) + 4*sec(a**3*b**2*y**3)",
+        "code": "import numpy as np\nfrom sympy import cos, cot, sec, csc\ndef _lambdifygenerated(y, a, b):\n    return 3*cos(a*b**3*y) + 4*cos(a**2*b*y) + 4*(tan(a*b*y**2)**(-1.0)) + 4*(sin(a**2*b**3*y**3)**(-1.0)) + 4*(cos(a**3*b**2*y**3)**(-1.0))\n"
+    },
+    {
+        "expression": "4*cos(a**3*b*x*y**3*z**2) + 2*csc(a*b*x**3*y**3*z**2) + 4*sec(a**3*b**3*x*y**3*z)",
+        "code": "import numpy as np\nfrom sympy import cos, sec, csc\ndef _lambdifygenerated(z, y, x, a, b):\n    return 4*cos(a**3*b*x*y**3*z**2) + 2*(sin(a*b*x**3*y**3*z**2)**(-1.0)) + 4*(cos(a**3*b**3*x*y**3*z)**(-1.0))\n"
+    },
+    {
+        "expression": "2*csc(a*x**2*y*z**3) + 3*csc(a*x**3*y*z) + 2*csc(a**3*x**3*y*z**3) + 2",
+        "code": "import numpy as np\nfrom sympy import csc\ndef _lambdifygenerated(a, x, y, z):\n    return 2*(sin(a*x**2*y*z**3)**(-1.0)) + 3*(sin(a*x**3*y*z)**(-1.0)) + 2*(sin(a**3*x**3*y*z**3)**(-1.0)) + 2\n"
+    },
+    {
+        "expression": "5*tan(a**2*b**3*c*x*y**3*z**3) + cot(a**3*b*c**3*x**2*y**3*z**2) + 3*csc(a**2*b*c*x**3*y**3*z**2)",
+        "code": "import numpy as np\nfrom sympy import cot, tan, csc\ndef _lambdifygenerated(a, x, c, y, z, b):\n    return 5*tan(a**2*b**3*c*x*y**3*z**3) + (tan(a**3*b*c**3*x**2*y**3*z**2)**(-1.0)) + 3*(sin(a**2*b*c*x**3*y**3*z**2)**(-1.0))\n"
+    },
+    {
+        "expression": "3*sin(b*x**3*y**2*z) + 4*sec(b**3*x*y**3*z**2) + 4",
+        "code": "import numpy as np\nfrom sympy import sin, sec\ndef _lambdifygenerated(x, y, z, b):\n    return 3*sin(b*x**3*y**2*z) + 4*(cos(b**3*x*y**3*z**2)**(-1.0)) + 4\n"
+    },
+    {
+        "expression": "3*sin(a*y) + sin(a**3*y**2) + 4*cot(a**3*y**2) + 3*sec(a*y**3) + 3",
+        "code": "import numpy as np\nfrom sympy import sin, cot, sec\ndef _lambdifygenerated(a, y):\n    return 3*sin(a*y) + sin(a**3*y**2) + 4*(tan(a**3*y**2)**(-1.0)) + 3*(cos(a*y**3)**(-1.0)) + 3\n"
+    },
+    {
+        "expression": "2*cos(a**2*b**3*c*x**3*z**2) + 5*tan(a*b*c*x*z**3) + 4*cot(a**3*b**3*c*x*z**3) + 2*csc(a**2*b*c*x**2*z) + 2*csc(a**2*b*c**3*x**2*z**3) + sec(a*b**2*c**3*x*z**3) + 4",
+        "code": "import numpy as np\nfrom sympy import cot, sec, cos, tan, csc\ndef _lambdifygenerated(z, c, a, b, x):\n    return 2*cos(a**2*b**3*c*x**3*z**2) + 5*tan(a*b*c*x*z**3) + 4*(tan(a**3*b**3*c*x*z**3)**(-1.0)) + 2*(sin(a**2*b*c*x**2*z)**(-1.0)) + 2*(sin(a**2*b*c**3*x**2*z**3)**(-1.0)) + (cos(a*b**2*c**3*x*z**3)**(-1.0)) + 4\n"
+    },
+    {
+        "expression": "3*sin(a*b**3*c*x**3*z) + 2*csc(a**2*b**2*c*x**2*z**3)",
+        "code": "import numpy as np\nfrom sympy import sin, csc\ndef _lambdifygenerated(z, c, b, x, a):\n    return 3*sin(a*b**3*c*x**3*z) + 2*(sin(a**2*b**2*c*x**2*z**3)**(-1.0))\n"
+    },
+    {
+        "expression": "sin(a*b**2*c**2*x**2*y*z**2) + 2*cos(a**3*b**2*c**3*x**2*y**3*z) + 5*tan(a*b**2*c**3*x**3*y*z**2) + 2*tan(a**3*b**2*c**2*x**2*y**3*z)",
+        "code": "import numpy as np\nfrom sympy import cos, sin, tan\ndef _lambdifygenerated(z, x, a, y, b, c):\n    return sin(a*b**2*c**2*x**2*y*z**2) + 2*cos(a**3*b**2*c**3*x**2*y**3*z) + 5*tan(a*b**2*c**3*x**3*y*z**2) + 2*tan(a**3*b**2*c**2*x**2*y**3*z)\n"
+    },
+    {
+        "expression": "3*sin(a**3*b*c*z**3) + 3*tan(a**2*b*c**2*z) + 5*cot(a**2*b*c**2*z) + 3*cot(a**3*b*c**2*z) + 5*sec(a**3*b**2*c**2*z**3) + 1",
+        "code": "import numpy as np\nfrom sympy import cot, tan, sin, sec\ndef _lambdifygenerated(z, c, b, a):\n    return 3*sin(a**3*b*c*z**3) + 3*tan(a**2*b*c**2*z) + 5*(tan(a**2*b*c**2*z)**(-1.0)) + 3*(tan(a**3*b*c**2*z)**(-1.0)) + 5*(cos(a**3*b**2*c**2*z**3)**(-1.0)) + 1\n"
+    },
+    {
+        "expression": "5*cot(c**2*x*y**3*z**3) + 5*cot(c**3*x**2*y**3*z**2) + 5*sec(c**2*x**2*y**2*z**3) + 1",
+        "code": "import numpy as np\nfrom sympy import cot, sec\ndef _lambdifygenerated(y, c, x, z):\n    return 5*(tan(c**2*x*y**3*z**3)**(-1.0)) + 5*(tan(c**3*x**2*y**3*z**2)**(-1.0)) + 5*(cos(c**2*x**2*y**2*z**3)**(-1.0)) + 1\n"
+    },
+    {
+        "expression": "4*sin(c**3*y**2*z) + 2*cos(c**3*y**2*z**3) + 2*csc(c*y**3*z**3) + 4*csc(c**2*y**2*z) + 3",
+        "code": "import numpy as np\nfrom sympy import cos, sin, csc\ndef _lambdifygenerated(z, y, c):\n    return 4*sin(c**3*y**2*z) + 2*cos(c**3*y**2*z**3) + 2*(sin(c*y**3*z**3)**(-1.0)) + 4*(sin(c**2*y**2*z)**(-1.0)) + 3\n"
+    },
+    {
+        "expression": "3*cos(a*b**2*c**2*x*y**3*z) + 5*tan(a**3*b**2*c**3*x**3*y*z**2) + 4*cot(a**2*b**3*c*x**3*y*z) + cot(a**3*b*c*x*y**2*z**2) + 1",
+        "code": "import numpy as np\nfrom sympy import cos, cot, tan\ndef _lambdifygenerated(a, z, b, c, x, y):\n    return 3*cos(a*b**2*c**2*x*y**3*z) + 5*tan(a**3*b**2*c**3*x**3*y*z**2) + 4*(tan(a**2*b**3*c*x**3*y*z)**(-1.0)) + (tan(a**3*b*c*x*y**2*z**2)**(-1.0)) + 1\n"
+    },
+    {
+        "expression": "cos(a*b*c**2*x**3*y**3*z) + 4*cos(a**3*b*c**3*x**3*y*z**2) + 5*sec(a**2*b*c*x**3*y*z**2) + 2*sec(a**2*b**2*c**3*x**3*y*z**2) + 5",
+        "code": "import numpy as np\nfrom sympy import cos, sec\ndef _lambdifygenerated(a, z, y, x, c, b):\n    return cos(a*b*c**2*x**3*y**3*z) + 4*cos(a**3*b*c**3*x**3*y*z**2) + 5*(cos(a**2*b*c*x**3*y*z**2)**(-1.0)) + 2*(cos(a**2*b**2*c**3*x**3*y*z**2)**(-1.0)) + 5\n"
+    },
+    {
+        "expression": "2*cos(b**3*c**2*y**2*z**2) + 2*csc(b*c**2*y**3*z) + csc(b**3*c*y*z**3) + 2",
+        "code": "import numpy as np\nfrom sympy import cos, csc\ndef _lambdifygenerated(y, z, b, c):\n    return 2*cos(b**3*c**2*y**2*z**2) + 2*(sin(b*c**2*y**3*z)**(-1.0)) + (sin(b**3*c*y*z**3)**(-1.0)) + 2\n"
+    },
+    {
+        "expression": "4*tan(a**3*b**2) + 4",
+        "code": "import numpy as np\nfrom sympy import tan\ndef _lambdifygenerated(b, a):\n    return 4*tan(a**3*b**2) + 4\n"
+    },
+    {
+        "expression": "3*cos(b**2*x*z) + tan(b**2*x*z**3) + csc(b**3*x**3*z**2) + 5",
+        "code": "import numpy as np\nfrom sympy import cos, tan, csc\ndef _lambdifygenerated(b, x, z):\n    return 3*cos(b**2*x*z) + tan(b**2*x*z**3) + (sin(b**3*x**3*z**2)**(-1.0)) + 5\n"
+    },
+    {
+        "expression": "cos(x**2*z**2) + 2*sec(x**3*z**2) + 4",
+        "code": "import numpy as np\nfrom sympy import cos, sec\ndef _lambdifygenerated(z, x):\n    return cos(x**2*z**2) + 2*(cos(x**3*z**2)**(-1.0)) + 4\n"
+    },
+    {
+        "expression": "4*sin(a**3*c*x**3*y**3*z**2) + 2*csc(a*c*x**2*y*z) + 2*csc(a*c*x**2*y**3*z**2) + 5",
+        "code": "import numpy as np\nfrom sympy import sin, csc\ndef _lambdifygenerated(y, z, c, x, a):\n    return 4*sin(a**3*c*x**3*y**3*z**2) + 2*(sin(a*c*x**2*y*z)**(-1.0)) + 2*(sin(a*c*x**2*y**3*z**2)**(-1.0)) + 5\n"
+    },
+    {
+        "expression": "2*cos(a**3*c*x**3*y*z**3) + 3*csc(a*c**2*x**3*y*z) + 4*sec(a**2*c*x**3*y**2*z**2)",
+        "code": "import numpy as np\nfrom sympy import cos, sec, csc\ndef _lambdifygenerated(a, y, c, z, x):\n    return 2*cos(a**3*c*x**3*y*z**3) + 3*(sin(a*c**2*x**3*y*z)**(-1.0)) + 4*(cos(a**2*c*x**3*y**2*z**2)**(-1.0))\n"
+    },
+    {
+        "expression": "4*tan(c**2*x) + sec(c**3*x**2) + sec(c**3*x**3)",
+        "code": "import numpy as np\nfrom sympy import tan, sec\ndef _lambdifygenerated(c, x):\n    return 4*tan(c**2*x) + (cos(c**3*x**2)**(-1.0)) + (cos(c**3*x**3)**(-1.0))\n"
+    },
+    {
+        "expression": "sin(a**3*c**2) + 2*tan(a**2*c) + 3*cot(a**3*c**2) + cot(a**3*c**3) + 1",
+        "code": "import numpy as np\nfrom sympy import cot, tan, sin\ndef _lambdifygenerated(a, c):\n    return sin(a**3*c**2) + 2*tan(a**2*c) + 3*(tan(a**3*c**2)**(-1.0)) + (tan(a**3*c**3)**(-1.0)) + 1\n"
+    },
+    {
+        "expression": "3*tan(y*z**2) + cot(y*z) + 3",
+        "code": "import numpy as np\nfrom sympy import cot, tan\ndef _lambdifygenerated(y, z):\n    return 3*tan(y*z**2) + (tan(y*z)**(-1.0)) + 3\n"
+    },
+    {
+        "expression": "tan(a**3*b**2) + cot(a**3*b**2) + csc(a*b**3) + 4*csc(a**2*b) + 2",
+        "code": "import numpy as np\nfrom sympy import cot, tan, csc\ndef _lambdifygenerated(a, b):\n    return tan(a**3*b**2) + (tan(a**3*b**2)**(-1.0)) + (sin(a*b**3)**(-1.0)) + 4*(sin(a**2*b)**(-1.0)) + 2\n"
+    },
+    {
+        "expression": "3*sin(a**2*b**3*x**3) + 3*cos(a**2*b**3*x**2) + tan(a*b**3*x) + 5*csc(a**3*b**2*x) + 3",
+        "code": "import numpy as np\nfrom sympy import cos, sin, tan, csc\ndef _lambdifygenerated(b, x, a):\n    return 3*sin(a**2*b**3*x**3) + 3*cos(a**2*b**3*x**2) + tan(a*b**3*x) + 5*(sin(a**3*b**2*x)**(-1.0)) + 3\n"
+    },
+    {
+        "expression": "3*sin(a*c**2) + 3*sin(a**3*c**2) + 2*cos(a*c**2) + 4*cot(a*c**2) + 3",
+        "code": "import numpy as np\nfrom sympy import cos, sin, cot\ndef _lambdifygenerated(a, c):\n    return 3*sin(a*c**2) + 3*sin(a**3*c**2) + 2*cos(a*c**2) + 4*(tan(a*c**2)**(-1.0)) + 3\n"
+    },
+    {
+        "expression": "5*sin(a*b**2) + sin(a**2*b) + 5*cos(a**2*b**3) + 4*cot(a**3*b**2) + sec(a*b**2) + 1",
+        "code": "import numpy as np\nfrom sympy import cot, cos, sin, sec\ndef _lambdifygenerated(b, a):\n    return 5*sin(a*b**2) + sin(a**2*b) + 5*cos(a**2*b**3) + 4*(tan(a**3*b**2)**(-1.0)) + (cos(a*b**2)**(-1.0)) + 1\n"
+    },
+    {
+        "expression": "5*sin(b**2*c**3*z**3) + 4*tan(b**3*c**3*z**2) + sec(b**3*c**3*z**3) + 5",
+        "code": "import numpy as np\nfrom sympy import sin, tan, sec\ndef _lambdifygenerated(c, z, b):\n    return 5*sin(b**2*c**3*z**3) + 4*tan(b**3*c**3*z**2) + (cos(b**3*c**3*z**3)**(-1.0)) + 5\n"
+    },
+    {
+        "expression": "5*sin(a*b**3*c**3*x**3*y) + 4",
+        "code": "import numpy as np\nfrom sympy import sin\ndef _lambdifygenerated(y, x, b, a, c):\n    return 5*sin(a*b**3*c**3*x**3*y) + 4\n"
+    },
+    {
+        "expression": "csc(a**2*b**3*c**3*x*z**3)",
+        "code": "import numpy as np\nfrom sympy import csc\ndef _lambdifygenerated(z, a, b, c, x):\n    return (sin(a**2*b**3*c**3*x*z**3)**(-1.0))\n"
+    },
+    {
+        "expression": "4*tan(a**3*y**2) + 4",
+        "code": "import numpy as np\nfrom sympy import tan\ndef _lambdifygenerated(y, a):\n    return 4*tan(a**3*y**2) + 4\n"
+    },
+    {
+        "expression": "2*sin(a**2*b**3*c**3*x**3*y**3*z)",
+        "code": "import numpy as np\nfrom sympy import sin\ndef _lambdifygenerated(c, b, y, a, x, z):\n    return 2*sin(a**2*b**3*c**3*x**3*y**3*z)\n"
+    },
+    {
+        "expression": "5*sin(a**3*b**2*c*x**3*y*z**2) + cot(a*b**3*c*x**3*y**3*z**3) + 1",
+        "code": "import numpy as np\nfrom sympy import cot, sin\ndef _lambdifygenerated(y, b, x, a, z, c):\n    return 5*sin(a**3*b**2*c*x**3*y*z**2) + (tan(a*b**3*c*x**3*y**3*z**3)**(-1.0)) + 1\n"
+    },
+    {
+        "expression": "5*sin(b*c**3) + 3*tan(b**3*c**2) + 4*sec(b**2*c**3) + 3",
+        "code": "import numpy as np\nfrom sympy import sin, tan, sec\ndef _lambdifygenerated(c, b):\n    return 5*sin(b*c**3) + 3*tan(b**3*c**2) + 4*(cos(b**2*c**3)**(-1.0)) + 3\n"
+    },
+    {
+        "expression": "2*tan(a*b**2*c*y**2) + 3*cot(a**3*b**3*c*y**2) + 4*csc(a**2*b*c*y) + 3*csc(a**3*b**2*c**3*y**3) + sec(a**2*b*c*y**3) + 5",
+        "code": "import numpy as np\nfrom sympy import cot, tan, sec, csc\ndef _lambdifygenerated(b, y, a, c):\n    return 2*tan(a*b**2*c*y**2) + 3*(tan(a**3*b**3*c*y**2)**(-1.0)) + 4*(sin(a**2*b*c*y)**(-1.0)) + 3*(sin(a**3*b**2*c**3*y**3)**(-1.0)) + (cos(a**2*b*c*y**3)**(-1.0)) + 5\n"
+    },
+    {
+        "expression": "4*tan(b*c*x**3*z) + 4*tan(b**2*c**2*x**2*z**2) + 5",
+        "code": "import numpy as np\nfrom sympy import tan\ndef _lambdifygenerated(z, x, b, c):\n    return 4*tan(b*c*x**3*z) + 4*tan(b**2*c**2*x**2*z**2) + 5\n"
+    },
+    {
+        "expression": "3*sec(b**3*c*x**2*y) + 5",
+        "code": "import numpy as np\nfrom sympy import sec\ndef _lambdifygenerated(b, c, y, x):\n    return 3*(cos(b**3*c*x**2*y)**(-1.0)) + 5\n"
+    },
+    {
+        "expression": "5*tan(a**2*b**2*c**3*x**2*y*z) + sec(a*b**3*c*x**3*y**3*z) + 3*sec(a**2*b*c**2*x*y**2*z**3) + 3",
+        "code": "import numpy as np\nfrom sympy import tan, sec\ndef _lambdifygenerated(b, c, a, y, z, x):\n    return 5*tan(a**2*b**2*c**3*x**2*y*z) + (cos(a*b**3*c*x**3*y**3*z)**(-1.0)) + 3*(cos(a**2*b*c**2*x*y**2*z**3)**(-1.0)) + 3\n"
+    },
+    {
+        "expression": "3*sin(a*c**2*x**2*z**3) + 5*cos(a*c*x*z**2) + 3*cos(a**3*c**3*x**3*z) + 5*tan(a**3*c**2*x**3*z**2) + 4*sec(a**2*c**3*x*z**3) + 1",
+        "code": "import numpy as np\nfrom sympy import cos, sin, tan, sec\ndef _lambdifygenerated(z, a, x, c):\n    return 3*sin(a*c**2*x**2*z**3) + 5*cos(a*c*x*z**2) + 3*cos(a**3*c**3*x**3*z) + 5*tan(a**3*c**2*x**3*z**2) + 4*(cos(a**2*c**3*x*z**3)**(-1.0)) + 1\n"
+    },
+    {
+        "expression": "3*cot(a**3*b**3*c**2*x*y**2*z**3) + 3*csc(a**3*b**3*c**3*x**3*y**3*z) + sec(a**2*b**2*c*x*y**2*z) + 3",
+        "code": "import numpy as np\nfrom sympy import cot, sec, csc\ndef _lambdifygenerated(x, z, y, c, a, b):\n    return 3*(tan(a**3*b**3*c**2*x*y**2*z**3)**(-1.0)) + 3*(sin(a**3*b**3*c**3*x**3*y**3*z)**(-1.0)) + (cos(a**2*b**2*c*x*y**2*z)**(-1.0)) + 3\n"
+    },
+    {
+        "expression": "3*cot(b*c**2*z**2) + 1",
+        "code": "import numpy as np\nfrom sympy import cot\ndef _lambdifygenerated(b, c, z):\n    return 3*(tan(b*c**2*z**2)**(-1.0)) + 1\n"
+    },
+    {
+        "expression": "3*tan(b**2*z**3) + 3*csc(b**2*z**3) + 5*sec(b*z) + 4",
+        "code": "import numpy as np\nfrom sympy import tan, sec, csc\ndef _lambdifygenerated(z, b):\n    return 3*tan(b**2*z**3) + 3*(sin(b**2*z**3)**(-1.0)) + 5*(cos(b*z)**(-1.0)) + 4\n"
+    },
+    {
+        "expression": "2*sin(x**3*z**2) + cot(x**2*z**3) + 2*csc(x*z**3) + 5",
+        "code": "import numpy as np\nfrom sympy import sin, cot, csc\ndef _lambdifygenerated(z, x):\n    return 2*sin(x**3*z**2) + (tan(x**2*z**3)**(-1.0)) + 2*(sin(x*z**3)**(-1.0)) + 5\n"
+    },
+    {
+        "expression": "5*sin(a**3*b**3*x**2*y**3) + 4",
+        "code": "import numpy as np\nfrom sympy import sin\ndef _lambdifygenerated(y, b, x, a):\n    return 5*sin(a**3*b**3*x**2*y**3) + 4\n"
+    },
+    {
+        "expression": "3*sin(a*b*c**3*x*y**3*z**2) + 2*cos(a**2*b*c*x**3*y*z**3) + 5*csc(a*b**3*c**2*x**2*y**3*z) + 3",
+        "code": "import numpy as np\nfrom sympy import cos, sin, csc\ndef _lambdifygenerated(z, c, x, b, a, y):\n    return 3*sin(a*b*c**3*x*y**3*z**2) + 2*cos(a**2*b*c*x**3*y*z**3) + 5*(sin(a*b**3*c**2*x**2*y**3*z)**(-1.0)) + 3\n"
+    },
+    {
+        "expression": "5*cos(a**3*b**2*c**2*y**2*z**2) + 4*cos(a**3*b**3*c*y*z) + cot(a*b**2*c*y*z**3) + sec(a*b*c*y**3*z**3) + 2",
+        "code": "import numpy as np\nfrom sympy import cos, cot, sec\ndef _lambdifygenerated(c, y, a, b, z):\n    return 5*cos(a**3*b**2*c**2*y**2*z**2) + 4*cos(a**3*b**3*c*y*z) + (tan(a*b**2*c*y*z**3)**(-1.0)) + (cos(a*b*c*y**3*z**3)**(-1.0)) + 2\n"
+    },
+    {
+        "expression": "4*sin(a*x*y**3*z**3) + 4*cot(a*x*y*z) + 2*cot(a*x**2*y**3*z**3) + 5*cot(a**3*x**2*y*z**2) + 2*cot(a**3*x**3*y**3*z**2) + 3*sec(a**2*x**2*y**3*z**3) + 1",
+        "code": "import numpy as np\nfrom sympy import cot, sec, sin\ndef _lambdifygenerated(z, x, a, y):\n    return 4*sin(a*x*y**3*z**3) + 4*(tan(a*x*y*z)**(-1.0)) + 2*(tan(a*x**2*y**3*z**3)**(-1.0)) + 5*(tan(a**3*x**2*y*z**2)**(-1.0)) + 2*(tan(a**3*x**3*y**3*z**2)**(-1.0)) + 3*(cos(a**2*x**2*y**3*z**3)**(-1.0)) + 1\n"
+    },
+    {
+        "expression": "3*sin(a**3*b**2*c**2*x**3*y**3*z**3) + 3*cos(a**3*b**3*c*x**2*y**2*z) + 4*csc(a**3*b**2*c**2*x**3*y**3*z**2) + 5",
+        "code": "import numpy as np\nfrom sympy import cos, sin, csc\ndef _lambdifygenerated(a, y, c, x, b, z):\n    return 3*sin(a**3*b**2*c**2*x**3*y**3*z**3) + 3*cos(a**3*b**3*c*x**2*y**2*z) + 4*(sin(a**3*b**2*c**2*x**3*y**3*z**2)**(-1.0)) + 5\n"
+    },
+    {
+        "expression": "sin(a**2*c**3*y**2*z**3) + 3*csc(a*c**3*y**3*z) + 5",
+        "code": "import numpy as np\nfrom sympy import sin, csc\ndef _lambdifygenerated(z, a, c, y):\n    return sin(a**2*c**3*y**2*z**3) + 3*(sin(a*c**3*y**3*z)**(-1.0)) + 5\n"
+    },
+    {
+        "expression": "3*cos(a*b**2*c*x*y*z**2)",
+        "code": "import numpy as np\nfrom sympy import cos\ndef _lambdifygenerated(y, c, z, x, b, a):\n    return 3*cos(a*b**2*c*x*y*z**2)\n"
+    },
+    {
+        "expression": "sin(a**3*b**2*x*z) + 5*tan(a*b*x**3*z**3) + 2*tan(a**3*b**2*x**2*z) + 4*cot(a*b**3*x*z) + 4",
+        "code": "import numpy as np\nfrom sympy import sin, tan, cot\ndef _lambdifygenerated(z, x, b, a):\n    return sin(a**3*b**2*x*z) + 5*tan(a*b*x**3*z**3) + 2*tan(a**3*b**2*x**2*z) + 4*(tan(a*b**3*x*z)**(-1.0)) + 4\n"
+    },
+    {
+        "expression": "4*sin(b*c**2) + 4*sin(b**2*c**2) + 4*cos(b*c**3) + 3*tan(b**2*c**2) + 3*csc(b**3*c**3) + sec(b**3*c**2) + 3",
+        "code": "import numpy as np\nfrom sympy import sec, cos, sin, tan, csc\ndef _lambdifygenerated(c, b):\n    return 4*sin(b*c**2) + 4*sin(b**2*c**2) + 4*cos(b*c**3) + 3*tan(b**2*c**2) + 3*(sin(b**3*c**3)**(-1.0)) + (cos(b**3*c**2)**(-1.0)) + 3\n"
+    },
+    {
+        "expression": "3*sec(a**2*y**3*z**3) + 3",
+        "code": "import numpy as np\nfrom sympy import sec\ndef _lambdifygenerated(a, y, z):\n    return 3*(cos(a**2*y**3*z**3)**(-1.0)) + 3\n"
+    },
+    {
+        "expression": "3*sin(a**2*b**2*c**3*x*z) + 2*cos(a**2*b**3*c**2*x**2*z**2) + 2*sec(a**3*b**2*c**3*x*z**3) + 1",
+        "code": "import numpy as np\nfrom sympy import cos, sin, sec\ndef _lambdifygenerated(x, z, c, a, b):\n    return 3*sin(a**2*b**2*c**3*x*z) + 2*cos(a**2*b**3*c**2*x**2*z**2) + 2*(cos(a**3*b**2*c**3*x*z**3)**(-1.0)) + 1\n"
+    },
+    {
+        "expression": "2*sin(b**3*c**3*x**3*y) + 3*tan(b**2*c**2*x**2*y) + 2*csc(b*c**2*x*y**2) + 5",
+        "code": "import numpy as np\nfrom sympy import sin, tan, csc\ndef _lambdifygenerated(b, y, x, c):\n    return 2*sin(b**3*c**3*x**3*y) + 3*tan(b**2*c**2*x**2*y) + 2*(sin(b*c**2*x*y**2)**(-1.0)) + 5\n"
+    },
+    {
+        "expression": "5*sin(c*x**3*y**3) + 5*sin(c**2*x**3*y) + 2*sec(c*x*y**3) + 3",
+        "code": "import numpy as np\nfrom sympy import sin, sec\ndef _lambdifygenerated(c, y, x):\n    return 5*sin(c*x**3*y**3) + 5*sin(c**2*x**3*y) + 2*(cos(c*x*y**3)**(-1.0)) + 3\n"
+    },
+    {
+        "expression": "tan(a**3*b**3*y**2) + 4*csc(a**2*b**2*y**2) + 5",
+        "code": "import numpy as np\nfrom sympy import tan, csc\ndef _lambdifygenerated(b, y, a):\n    return tan(a**3*b**3*y**2) + 4*(sin(a**2*b**2*y**2)**(-1.0)) + 5\n"
+    },
+    {
+        "expression": "5*sin(a**3*b**3*c*x**3*y**2) + 2*cos(a*b**3*c**3*x**2*y) + cos(a**2*b**2*c*x*y**2) + 4*tan(a**3*b**2*c**2*x*y) + 3",
+        "code": "import numpy as np\nfrom sympy import cos, sin, tan\ndef _lambdifygenerated(x, b, a, y, c):\n    return 5*sin(a**3*b**3*c*x**3*y**2) + 2*cos(a*b**3*c**3*x**2*y) + cos(a**2*b**2*c*x*y**2) + 4*tan(a**3*b**2*c**2*x*y) + 3\n"
+    },
+    {
+        "expression": "5*sin(a**2*c**3*x**3*y*z) + sin(a**3*c**3*x*y**2*z**2) + cos(a*c*x**3*y**2*z) + 3*cos(a**2*c**3*x*y**2*z) + 3*cot(a**3*c*x**3*y**3*z)",
+        "code": "import numpy as np\nfrom sympy import cos, sin, cot\ndef _lambdifygenerated(x, z, c, a, y):\n    return 5*sin(a**2*c**3*x**3*y*z) + sin(a**3*c**3*x*y**2*z**2) + cos(a*c*x**3*y**2*z) + 3*cos(a**2*c**3*x*y**2*z) + 3*(tan(a**3*c*x**3*y**3*z)**(-1.0))\n"
+    },
+    {
+        "expression": "3*cot(a**3*b**2*x**3*y*z**3) + 4*sec(a**2*b**3*x*y**2*z**2) + 1",
+        "code": "import numpy as np\nfrom sympy import cot, sec\ndef _lambdifygenerated(y, b, a, z, x):\n    return 3*(tan(a**3*b**2*x**3*y*z**3)**(-1.0)) + 4*(cos(a**2*b**3*x*y**2*z**2)**(-1.0)) + 1\n"
+    },
+    {
+        "expression": "2*cos(a*c**2*x**3*z**2)",
+        "code": "import numpy as np\nfrom sympy import cos\ndef _lambdifygenerated(x, z, c, a):\n    return 2*cos(a*c**2*x**3*z**2)\n"
+    },
+    {
+        "expression": "sin(a**2*b*c**2*x*y) + 2*sin(a**3*b**3*c**3*x**2*y) + 3",
+        "code": "import numpy as np\nfrom sympy import sin\ndef _lambdifygenerated(y, x, b, a, c):\n    return sin(a**2*b*c**2*x*y) + 2*sin(a**3*b**3*c**3*x**2*y) + 3\n"
+    },
+    {
+        "expression": "4*sin(c**3*x**2*z) + sec(c**2*x*z**3) + 2",
+        "code": "import numpy as np\nfrom sympy import sin, sec\ndef _lambdifygenerated(c, x, z):\n    return 4*sin(c**3*x**2*z) + (cos(c**2*x*z**3)**(-1.0)) + 2\n"
+    }
+]

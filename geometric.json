@@ -1,0 +1,402 @@
+[
+    {
+        "expression": "3*Abs(a*b**3*c*x*z) + 5*Abs(a**2*b*c*x**2*z**3) + Abs(a**2*b**2*c**3*x*z) + 4",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(z, b, c, a, x):\n    return 3*abs(a*b**3*c*x*z) + 5*abs(a**2*b*c*x**2*z**3) + abs(a**2*b**2*c**3*x*z) + 4\n"
+    },
+    {
+        "expression": "Abs(a*z) + 3*Abs(a*z**3) + 4",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(z, a):\n    return abs(a*z) + 3*abs(a*z**3) + 4\n"
+    },
+    {
+        "expression": "5*sqrt(a*b*x*y**2*z**2) + 4*Abs(a*b**2*x**2*y**2*z**2) + 3",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(y, b, z, a, x):\n    return 5*sqrt(a*b*x*y**2*z**2) + 4*abs(a*b**2*x**2*y**2*z**2) + 3\n"
+    },
+    {
+        "expression": "4*Abs(a**2*b**3*c**3*x**2*y) + 5*Abs(a**3*b**3*c*x*y**2) + 4",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(c, a, y, b, x):\n    return 4*abs(a**2*b**3*c**3*x**2*y) + 5*abs(a**3*b**3*c*x*y**2) + 4\n"
+    },
+    {
+        "expression": "5*sqrt(a**2*b**2*c**3*x**3*y**3*z**2) + 5*sqrt(a**3*b**2*c*x**2*y**3*z**2) + 3*Abs(a**3*b*c*x**2*y**2*z**2) + 1",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(x, z, c, a, y, b):\n    return 5*sqrt(a**2*b**2*c**3*x**3*y**3*z**2) + 5*sqrt(a**3*b**2*c*x**2*y**3*z**2) + 3*abs(a**3*b*c*x**2*y**2*z**2) + 1\n"
+    },
+    {
+        "expression": "3*sqrt(c**2*y**2*z**3) + 6*sqrt(c**3*y*z**2) + 1",
+        "code": "import numpy as np\ndef _lambdifygenerated(c, z, y):\n    return 3*sqrt(c**2*y**2*z**3) + 6*sqrt(c**3*y*z**2) + 1\n"
+    },
+    {
+        "expression": "Abs(a**3*b*c**2*x**3*y**3*z) + Abs(a**3*b**3*c**3*x**3*y**2*z**3) + 3",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(z, c, b, x, a, y):\n    return abs(a**3*b*c**2*x**3*y**3*z) + abs(a**3*b**3*c**3*x**3*y**2*z**3) + 3\n"
+    },
+    {
+        "expression": "3*sqrt(b**3*c*x**3*y*z**3) + 5*Abs(b*c**3*x**2*y*z) + 2",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(x, y, z, b, c):\n    return 3*sqrt(b**3*c*x**3*y*z**3) + 5*abs(b*c**3*x**2*y*z) + 2\n"
+    },
+    {
+        "expression": "5*sqrt(a**2*b*c**3*x*y**2*z**2) + 5",
+        "code": "import numpy as np\ndef _lambdifygenerated(z, y, c, a, b, x):\n    return 5*sqrt(a**2*b*c**3*x*y**2*z**2) + 5\n"
+    },
+    {
+        "expression": "5*sqrt(x**3*y**3) + 1",
+        "code": "import numpy as np\ndef _lambdifygenerated(x, y):\n    return 5*sqrt(x**3*y**3) + 1\n"
+    },
+    {
+        "expression": "sqrt(a**3*b**2*c**2*x*z**3) + 5",
+        "code": "import numpy as np\ndef _lambdifygenerated(x, c, b, z, a):\n    return sqrt(a**3*b**2*c**2*x*z**3) + 5\n"
+    },
+    {
+        "expression": "3*Abs(a*c**2*x) + 3*Abs(a**3*c**3*x**2) + 2",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(c, a, x):\n    return 3*abs(a*c**2*x) + 3*abs(a**3*c**3*x**2) + 2\n"
+    },
+    {
+        "expression": "2*Abs(b**2*c**3*x*y**2*z) + 1",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(b, x, y, c, z):\n    return 2*abs(b**2*c**3*x*y**2*z) + 1\n"
+    },
+    {
+        "expression": "2*sqrt(c*x*y) + 3",
+        "code": "import numpy as np\ndef _lambdifygenerated(y, c, x):\n    return 2*sqrt(c*x*y) + 3\n"
+    },
+    {
+        "expression": "4*sqrt(c*y**2) + 5*sqrt(c**2*y) + 2*Abs(c**2*y**2) + 2",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(c, y):\n    return 4*sqrt(c*y**2) + 5*sqrt(c**2*y) + 2*abs(c**2*y**2) + 2\n"
+    },
+    {
+        "expression": "3*Abs(a**2*c**2*y**3*z) + 1",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(c, y, a, z):\n    return 3*abs(a**2*c**2*y**3*z) + 1\n"
+    },
+    {
+        "expression": "2*sqrt(a*c**2*y**2) + 5*sqrt(a**3*c**3*y**3) + 4*Abs(a**2*c*y**2) + 4",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(c, y, a):\n    return 2*sqrt(a*c**2*y**2) + 5*sqrt(a**3*c**3*y**3) + 4*abs(a**2*c*y**2) + 4\n"
+    },
+    {
+        "expression": "3*Abs(a*b*c**2*x*y**2*z**3) + 3*Abs(a**3*b**3*c*x**3*y*z**3) + 4",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(y, x, b, a, c, z):\n    return 3*abs(a*b*c**2*x*y**2*z**3) + 3*abs(a**3*b**3*c*x**3*y*z**3) + 4\n"
+    },
+    {
+        "expression": "3*sqrt(a**2*c**2*y) + 3*Abs(a**2*c**2*y**3) + 2*Abs(a**3*c**2*y**3) + 4",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(y, c, a):\n    return 3*sqrt(a**2*c**2*y) + 3*abs(a**2*c**2*y**3) + 2*abs(a**3*c**2*y**3) + 4\n"
+    },
+    {
+        "expression": "4*sqrt(a*y*z) + Abs(a*y**3*z**2) + 4",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(y, a, z):\n    return 4*sqrt(a*y*z) + abs(a*y**3*z**2) + 4\n"
+    },
+    {
+        "expression": "3*sqrt(b**3*c) + 2*Abs(b**2*c**2) + 4*Abs(b**3*c**2) + 2",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(b, c):\n    return 3*sqrt(b**3*c) + 2*abs(b**2*c**2) + 4*abs(b**3*c**2) + 2\n"
+    },
+    {
+        "expression": "3*Abs(a**3*b**3*c*x**3*z**2) + 5",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(c, z, b, x, a):\n    return 3*abs(a**3*b**3*c*x**3*z**2) + 5\n"
+    },
+    {
+        "expression": "4*sqrt(x**2*y*z) + 4*sqrt(x**2*y*z**3) + 2*sqrt(x**3*y**2*z) + 5",
+        "code": "import numpy as np\ndef _lambdifygenerated(z, x, y):\n    return 4*sqrt(x**2*y*z) + 4*sqrt(x**2*y*z**3) + 2*sqrt(x**3*y**2*z) + 5\n"
+    },
+    {
+        "expression": "sqrt(x**2*y**3) + 3*sqrt(x**3*y**2) + 5*Abs(x**3*y**2) + 1",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(y, x):\n    return sqrt(x**2*y**3) + 3*sqrt(x**3*y**2) + 5*abs(x**3*y**2) + 1\n"
+    },
+    {
+        "expression": "3*sqrt(a**2*c) + 3*sqrt(a**3*c) + 5",
+        "code": "import numpy as np\ndef _lambdifygenerated(c, a):\n    return 3*sqrt(a**2*c) + 3*sqrt(a**3*c) + 5\n"
+    },
+    {
+        "expression": "Abs(b*x**2*y**3*z**3) + 2*Abs(b**3*x**3*y**3*z) + 1",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(y, x, b, z):\n    return abs(b*x**2*y**3*z**3) + 2*abs(b**3*x**3*y**3*z) + 1\n"
+    },
+    {
+        "expression": "5*sqrt(a*b) + 5",
+        "code": "import numpy as np\ndef _lambdifygenerated(b, a):\n    return 5*sqrt(a*b) + 5\n"
+    },
+    {
+        "expression": "5*sqrt(a**3*b*c*z**2) + 3",
+        "code": "import numpy as np\ndef _lambdifygenerated(a, b, z, c):\n    return 5*sqrt(a**3*b*c*z**2) + 3\n"
+    },
+    {
+        "expression": "2*sqrt(a**3*b*x*z) + 5*Abs(a**3*b**3*x**2*z) + 1",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(z, a, b, x):\n    return 2*sqrt(a**3*b*x*z) + 5*abs(a**3*b**3*x**2*z) + 1\n"
+    },
+    {
+        "expression": "4*sqrt(a**2*x) + 2*sqrt(a**3*x) + Abs(a**2*x**3) + 3",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(a, x):\n    return 4*sqrt(a**2*x) + 2*sqrt(a**3*x) + abs(a**2*x**3) + 3\n"
+    },
+    {
+        "expression": "2*sqrt(c*y**3) + 3",
+        "code": "import numpy as np\ndef _lambdifygenerated(y, c):\n    return 2*sqrt(c*y**3) + 3\n"
+    },
+    {
+        "expression": "4*sqrt(a*b**2*x*y*z**3) + Abs(a*b**2*x*y**2*z) + 4*Abs(a**3*b**2*x**3*y**2*z**3) + 2",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(b, y, a, z, x):\n    return 4*sqrt(a*b**2*x*y*z**3) + abs(a*b**2*x*y**2*z) + 4*abs(a**3*b**2*x**3*y**2*z**3) + 2\n"
+    },
+    {
+        "expression": "3*sqrt(b*y) + 3",
+        "code": "import numpy as np\ndef _lambdifygenerated(y, b):\n    return 3*sqrt(b*y) + 3\n"
+    },
+    {
+        "expression": "5*sqrt(a**2*b*c**2*x**2*y**2*z**2) + sqrt(a**2*b**3*c**3*x*y*z**3) + 2*Abs(a**2*b*c*x**2*y**2*z**2) + 4",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(b, a, x, z, c, y):\n    return 5*sqrt(a**2*b*c**2*x**2*y**2*z**2) + sqrt(a**2*b**3*c**3*x*y*z**3) + 2*abs(a**2*b*c*x**2*y**2*z**2) + 4\n"
+    },
+    {
+        "expression": "3*sqrt(b*x) + 5",
+        "code": "import numpy as np\ndef _lambdifygenerated(x, b):\n    return 3*sqrt(b*x) + 5\n"
+    },
+    {
+        "expression": "3*sqrt(a**3*z**3) + 2",
+        "code": "import numpy as np\ndef _lambdifygenerated(a, z):\n    return 3*sqrt(a**3*z**3) + 2\n"
+    },
+    {
+        "expression": "2*sqrt(a*b*x*y**2*z**2) + sqrt(a*b*x*y**3*z**2) + 5*sqrt(a**3*b*x*y**3*z**2) + 3",
+        "code": "import numpy as np\ndef _lambdifygenerated(y, a, x, b, z):\n    return 2*sqrt(a*b*x*y**2*z**2) + sqrt(a*b*x*y**3*z**2) + 5*sqrt(a**3*b*x*y**3*z**2) + 3\n"
+    },
+    {
+        "expression": "2*sqrt(a*b*c**3*x**2*y**3*z) + 3",
+        "code": "import numpy as np\ndef _lambdifygenerated(y, x, c, z, b, a):\n    return 2*sqrt(a*b*c**3*x**2*y**3*z) + 3\n"
+    },
+    {
+        "expression": "3*sqrt(a**2*b**3*c**3*x**3*y**3*z) + 5",
+        "code": "import numpy as np\ndef _lambdifygenerated(b, x, c, z, y, a):\n    return 3*sqrt(a**2*b**3*c**3*x**3*y**3*z) + 5\n"
+    },
+    {
+        "expression": "4*Abs(a*b**3*c**3*x**3*y*z) + Abs(a**2*b**3*c**2*x**3*y*z) + 3*Abs(a**3*b*c**2*x*y**3*z**2) + 1",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(c, a, z, b, y, x):\n    return 4*abs(a*b**3*c**3*x**3*y*z) + abs(a**2*b**3*c**2*x**3*y*z) + 3*abs(a**3*b*c**2*x*y**3*z**2) + 1\n"
+    },
+    {
+        "expression": "5*Abs(b**2*c**2*x**3*z**2) + 2",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(z, b, x, c):\n    return 5*abs(b**2*c**2*x**3*z**2) + 2\n"
+    },
+    {
+        "expression": "4*sqrt(a**2*b**3*c*x**2*y*z) + sqrt(a**3*b**3*c*x*y**3*z**3) + 2*Abs(a**2*b**2*c**3*x**2*y**3*z**2) + 5",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(b, a, z, c, x, y):\n    return 4*sqrt(a**2*b**3*c*x**2*y*z) + sqrt(a**3*b**3*c*x*y**3*z**3) + 2*abs(a**2*b**2*c**3*x**2*y**3*z**2) + 5\n"
+    },
+    {
+        "expression": "3*sqrt(b**2*x*y**3*z**2) + 2*Abs(b*x**3*y*z**2) + 3*Abs(b**2*x**2*y**2*z**3) + 2",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(y, z, x, b):\n    return 3*sqrt(b**2*x*y**3*z**2) + 2*abs(b*x**3*y*z**2) + 3*abs(b**2*x**2*y**2*z**3) + 2\n"
+    },
+    {
+        "expression": "5*sqrt(a**3*c**2*y**2) + 4*Abs(a**3*c**3*y**3) + 3",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(a, c, y):\n    return 5*sqrt(a**3*c**2*y**2) + 4*abs(a**3*c**3*y**3) + 3\n"
+    },
+    {
+        "expression": "5*sqrt(b**2*c**2*x**3*y*z) + 4",
+        "code": "import numpy as np\ndef _lambdifygenerated(z, y, x, c, b):\n    return 5*sqrt(b**2*c**2*x**3*y*z) + 4\n"
+    },
+    {
+        "expression": "2*Abs(x**2*y**3) + 2",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(x, y):\n    return 2*abs(x**2*y**3) + 2\n"
+    },
+    {
+        "expression": "4*sqrt(b**2*c**3*x**2*y**2*z) + 5*Abs(b**2*c*x*y**3*z**2) + 1",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(z, c, x, b, y):\n    return 4*sqrt(b**2*c**3*x**2*y**2*z) + 5*abs(b**2*c*x*y**3*z**2) + 1\n"
+    },
+    {
+        "expression": "2*Abs(b*c**3) + 1",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(c, b):\n    return 2*abs(b*c**3) + 1\n"
+    },
+    {
+        "expression": "4*Abs(a*b**2*c) + 4*Abs(a**3*b*c) + 1",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(b, c, a):\n    return 4*abs(a*b**2*c) + 4*abs(a**3*b*c) + 1\n"
+    },
+    {
+        "expression": "3*sqrt(b**2*c**2*y*z**3) + 5*sqrt(b**3*c**3*y*z**2) + 3",
+        "code": "import numpy as np\ndef _lambdifygenerated(z, b, y, c):\n    return 3*sqrt(b**2*c**2*y*z**3) + 5*sqrt(b**3*c**3*y*z**2) + 3\n"
+    },
+    {
+        "expression": "2*sqrt(a**2*c**2*x**3*y**2*z**2) + 5*Abs(a**2*c**3*x*y**2*z) + 3*Abs(a**3*c**3*x*y*z**3) + 5",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(c, x, z, y, a):\n    return 2*sqrt(a**2*c**2*x**3*y**2*z**2) + 5*abs(a**2*c**3*x*y**2*z) + 3*abs(a**3*c**3*x*y*z**3) + 5\n"
+    },
+    {
+        "expression": "2*sqrt(b*c**3*x**2*z) + Abs(b**3*c*x*z**3) + 3",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(c, b, x, z):\n    return 2*sqrt(b*c**3*x**2*z) + abs(b**3*c*x*z**3) + 3\n"
+    },
+    {
+        "expression": "4*sqrt(a**3*b*c**3*x**2*y*z**3) + 2*Abs(a**3*b**3*c*x**3*y**2*z**2) + 3",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(x, a, z, y, b, c):\n    return 4*sqrt(a**3*b*c**3*x**2*y*z**3) + 2*abs(a**3*b**3*c*x**3*y**2*z**2) + 3\n"
+    },
+    {
+        "expression": "sqrt(a*b*x**2*y**2*z) + sqrt(a**2*b**3*x**3*y**3*z) + 4*sqrt(a**3*b**3*x*y*z**3) + 5",
+        "code": "import numpy as np\ndef _lambdifygenerated(a, x, b, z, y):\n    return sqrt(a*b*x**2*y**2*z) + sqrt(a**2*b**3*x**3*y**3*z) + 4*sqrt(a**3*b**3*x*y*z**3) + 5\n"
+    },
+    {
+        "expression": "2*Abs(a**2*b**3*c**3*x**3*y**3*z) + 1",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(b, c, y, x, z, a):\n    return 2*abs(a**2*b**3*c**3*x**3*y**3*z) + 1\n"
+    },
+    {
+        "expression": "3*sqrt(a*b**3*c**2*x**2*y**2*z**3) + 5*Abs(a**2*b**3*c**3*x*y**2*z) + 4",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(x, c, y, b, z, a):\n    return 3*sqrt(a*b**3*c**2*x**2*y**2*z**3) + 5*abs(a**2*b**3*c**3*x*y**2*z) + 4\n"
+    },
+    {
+        "expression": "5*sqrt(a*b**2*c**2*x) + 3",
+        "code": "import numpy as np\ndef _lambdifygenerated(x, c, b, a):\n    return 5*sqrt(a*b**2*c**2*x) + 3\n"
+    },
+    {
+        "expression": "3*Abs(a**2*b**3*x**3) + 4",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(a, b, x):\n    return 3*abs(a**2*b**3*x**3) + 4\n"
+    },
+    {
+        "expression": "3*sqrt(a**2*c**3*y**2) + 3*Abs(a*c**3*y**2) + 3*Abs(a**2*c*y**2) + 4",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(a, y, c):\n    return 3*sqrt(a**2*c**3*y**2) + 3*abs(a*c**3*y**2) + 3*abs(a**2*c*y**2) + 4\n"
+    },
+    {
+        "expression": "3*sqrt(x**2*z**3) + 2*Abs(x*z) + 1",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(x, z):\n    return 3*sqrt(x**2*z**3) + 2*abs(x*z) + 1\n"
+    },
+    {
+        "expression": "5*sqrt(b*c**3*x**3*y*z) + 4*sqrt(b**2*c*x**3*y**3*z**3) + Abs(b*c*x**3*y**3*z) + 3",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(c, y, b, x, z):\n    return 5*sqrt(b*c**3*x**3*y*z) + 4*sqrt(b**2*c*x**3*y**3*z**3) + abs(b*c*x**3*y**3*z) + 3\n"
+    },
+    {
+        "expression": "2*Abs(b*x**3) + 2*Abs(b**2*x**2) + 2*Abs(b**2*x**3) + 3",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(b, x):\n    return 2*abs(b*x**3) + 2*abs(b**2*x**2) + 2*abs(b**2*x**3) + 3\n"
+    },
+    {
+        "expression": "3*sqrt(a*c**3*x**3*y**3*z**2) + 4",
+        "code": "import numpy as np\ndef _lambdifygenerated(x, y, c, a, z):\n    return 3*sqrt(a*c**3*x**3*y**3*z**2) + 4\n"
+    },
+    {
+        "expression": "2*sqrt(a**2*b**3*c**2*z) + 5*Abs(a**3*b**2*c*z**3) + 2",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(a, b, c, z):\n    return 2*sqrt(a**2*b**3*c**2*z) + 5*abs(a**3*b**2*c*z**3) + 2\n"
+    },
+    {
+        "expression": "3*Abs(b*y**3*z) + 4*Abs(b**2*y**3*z**2) + 3",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(b, y, z):\n    return 3*abs(b*y**3*z) + 4*abs(b**2*y**3*z**2) + 3\n"
+    },
+    {
+        "expression": "2*sqrt(x**3*z**3) + Abs(x*z**3) + 3",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(x, z):\n    return 2*sqrt(x**3*z**3) + abs(x*z**3) + 3\n"
+    },
+    {
+        "expression": "2*sqrt(b*x**2*y*z**2) + 1",
+        "code": "import numpy as np\ndef _lambdifygenerated(b, y, x, z):\n    return 2*sqrt(b*x**2*y*z**2) + 1\n"
+    },
+    {
+        "expression": "5*sqrt(a*x**3*z**2) + 3*Abs(a*x**2*z) + 2*Abs(a**3*x**3*z**2) + 3",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(z, a, x):\n    return 5*sqrt(a*x**3*z**2) + 3*abs(a*x**2*z) + 2*abs(a**3*x**3*z**2) + 3\n"
+    },
+    {
+        "expression": "sqrt(a**2*b**2*x) + 3",
+        "code": "import numpy as np\ndef _lambdifygenerated(a, b, x):\n    return sqrt(a**2*b**2*x) + 3\n"
+    },
+    {
+        "expression": "4*sqrt(a**2*b**3*c**2*y) + 3*Abs(a**2*b*c**2*y**3) + Abs(a**3*b*c**3*y**3) + 3",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(b, y, c, a):\n    return 4*sqrt(a**2*b**3*c**2*y) + 3*abs(a**2*b*c**2*y**3) + abs(a**3*b*c**3*y**3) + 3\n"
+    },
+    {
+        "expression": "3*Abs(a*b**2*c*x*y*z) + 3*Abs(a**3*b*c**3*x*y**2*z) + 3",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(y, a, x, z, c, b):\n    return 3*abs(a*b**2*c*x*y*z) + 3*abs(a**3*b*c**3*x*y**2*z) + 3\n"
+    },
+    {
+        "expression": "sqrt(a*b*c**2*x*y*z**2) + 3",
+        "code": "import numpy as np\ndef _lambdifygenerated(a, z, b, y, c, x):\n    return sqrt(a*b*c**2*x*y*z**2) + 3\n"
+    },
+    {
+        "expression": "3*sqrt(a**2*c*x*y*z**3) + 2",
+        "code": "import numpy as np\ndef _lambdifygenerated(x, z, c, a, y):\n    return 3*sqrt(a**2*c*x*y*z**3) + 2\n"
+    },
+    {
+        "expression": "2*Abs(a*b**2*c**3*y*z**3) + 5*Abs(a**2*b*c**2*y*z) + 2*Abs(a**2*b**3*c**3*y*z) + 5",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(c, a, b, y, z):\n    return 2*abs(a*b**2*c**3*y*z**3) + 5*abs(a**2*b*c**2*y*z) + 2*abs(a**2*b**3*c**3*y*z) + 5\n"
+    },
+    {
+        "expression": "3*sqrt(a**2*b**2*c**3*x**2*y*z) + Abs(a**2*b*c*x*y**2*z**3) + 3*Abs(a**2*b**2*c**2*x**2*y**2*z) + 5",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(y, a, z, x, c, b):\n    return 3*sqrt(a**2*b**2*c**3*x**2*y*z) + abs(a**2*b*c*x*y**2*z**3) + 3*abs(a**2*b**2*c**2*x**2*y**2*z) + 5\n"
+    },
+    {
+        "expression": "2*sqrt(b*y*z**3) + 4*sqrt(b**3*y*z**3) + Abs(b*y**2*z) + 1",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(b, y, z):\n    return 2*sqrt(b*y*z**3) + 4*sqrt(b**3*y*z**3) + abs(b*y**2*z) + 1\n"
+    },
+    {
+        "expression": "Abs(b**2*c**2*x*y**3*z**3) + Abs(b**2*c**3*x**3*y**3*z) + Abs(b**3*c*x**3*y**3*z**2) + 1",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(c, x, z, b, y):\n    return abs(b**2*c**2*x*y**3*z**3) + abs(b**2*c**3*x**3*y**3*z) + abs(b**3*c*x**3*y**3*z**2) + 1\n"
+    },
+    {
+        "expression": "4*sqrt(a**2*c**2*x**3*y) + 5",
+        "code": "import numpy as np\ndef _lambdifygenerated(a, c, y, x):\n    return 4*sqrt(a**2*c**2*x**3*y) + 5\n"
+    },
+    {
+        "expression": "5*sqrt(b**2*c*x**3*y**2) + 3",
+        "code": "import numpy as np\ndef _lambdifygenerated(c, b, x, y):\n    return 5*sqrt(b**2*c*x**3*y**2) + 3\n"
+    },
+    {
+        "expression": "4*sqrt(b**3*z**3) + 2",
+        "code": "import numpy as np\ndef _lambdifygenerated(b, z):\n    return 4*sqrt(b**3*z**3) + 2\n"
+    },
+    {
+        "expression": "Abs(a*b**2*c*x*y) + Abs(a*b**2*c**2*x**3*y) + 2*Abs(a*b**2*c**3*x**2*y) + 3",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(c, b, a, y, x):\n    return abs(a*b**2*c*x*y) + abs(a*b**2*c**2*x**3*y) + 2*abs(a*b**2*c**3*x**2*y) + 3\n"
+    },
+    {
+        "expression": "3*sqrt(a**2*b**2*c*x**2*y*z**2) + 2*Abs(a**2*b**2*c**3*x*y**2*z) + 1",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(x, c, y, b, a, z):\n    return 3*sqrt(a**2*b**2*c*x**2*y*z**2) + 2*abs(a**2*b**2*c**3*x*y**2*z) + 1\n"
+    },
+    {
+        "expression": "2*sqrt(a**3*b**3*c**2*x**2*y**2*z**2) + 3*Abs(a*b*c**3*x*y**2*z**2) + 3*Abs(a**3*b*c**3*x**3*y**2*z**3) + 5",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(x, z, c, b, y, a):\n    return 2*sqrt(a**3*b**3*c**2*x**2*y**2*z**2) + 3*abs(a*b*c**3*x*y**2*z**2) + 3*abs(a**3*b*c**3*x**3*y**2*z**3) + 5\n"
+    },
+    {
+        "expression": "sqrt(a**2*b*c**3*y*z) + 4*sqrt(a**3*b**2*c**2*y**2*z) + 5*Abs(a**2*b**2*c**2*y**2*z**2) + 2",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(c, b, y, z, a):\n    return sqrt(a**2*b*c**3*y*z) + 4*sqrt(a**3*b**2*c**2*y**2*z) + 5*abs(a**2*b**2*c**2*y**2*z**2) + 2\n"
+    },
+    {
+        "expression": "5*sqrt(a**2*c**3*x**3*y**3*z**2) + 2*Abs(a**3*c**2*x**3*y**3*z**3) + 3",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(z, c, y, a, x):\n    return 5*sqrt(a**2*c**3*x**3*y**3*z**2) + 2*abs(a**3*c**2*x**3*y**3*z**3) + 3\n"
+    },
+    {
+        "expression": "4*sqrt(a*c*z) + 4*sqrt(a**2*c**3*z) + 2*Abs(a**3*c**3*z**3) + 5",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(c, a, z):\n    return 4*sqrt(a*c*z) + 4*sqrt(a**2*c**3*z) + 2*abs(a**3*c**3*z**3) + 5\n"
+    },
+    {
+        "expression": "5*sqrt(a**3*c**2*x**2*z) + 5*Abs(a**2*c*x**3*z) + 5",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(x, a, z, c):\n    return 5*sqrt(a**3*c**2*x**2*z) + 5*abs(a**2*c*x**3*z) + 5\n"
+    },
+    {
+        "expression": "5*Abs(a**2*b*c*x*y**2) + 4",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(c, y, b, x, a):\n    return 5*abs(a**2*b*c*x*y**2) + 4\n"
+    },
+    {
+        "expression": "sqrt(c**2*y**3) + 2",
+        "code": "import numpy as np\ndef _lambdifygenerated(c, y):\n    return sqrt(c**2*y**3) + 2\n"
+    },
+    {
+        "expression": "Abs(a**3*x**3) + 3",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(x, a):\n    return abs(a**3*x**3) + 3\n"
+    },
+    {
+        "expression": "5*sqrt(a**2*b*c*x*y**2*z) + 5*Abs(a*b**3*c*x**3*y*z) + Abs(a**3*b**2*c**3*x**3*y**2*z**3) + 1",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(z, a, y, x, b, c):\n    return 5*sqrt(a**2*b*c*x*y**2*z) + 5*abs(a*b**3*c*x**3*y*z) + abs(a**3*b**2*c**3*x**3*y**2*z**3) + 1\n"
+    },
+    {
+        "expression": "4*Abs(b*y**2) + 5*Abs(b**2*y**2) + 2",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(b, y):\n    return 4*abs(b*y**2) + 5*abs(b**2*y**2) + 2\n"
+    },
+    {
+        "expression": "4*sqrt(a*b**2*c**3*x**3*y**2) + 3*sqrt(a**3*b**3*c*x**3*y**2) + 4",
+        "code": "import numpy as np\ndef _lambdifygenerated(c, a, x, b, y):\n    return 4*sqrt(a*b**2*c**3*x**3*y**2) + 3*sqrt(a**3*b**3*c*x**3*y**2) + 4\n"
+    },
+    {
+        "expression": "5*Abs(b*c**2*y*z) + 2*Abs(b*c**2*y**3*z**3) + 4*Abs(b**2*c*y*z**3) + 5",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(z, c, b, y):\n    return 5*abs(b*c**2*y*z) + 2*abs(b*c**2*y**3*z**3) + 4*abs(b**2*c*y*z**3) + 5\n"
+    },
+    {
+        "expression": "3*Abs(a*b**3*c*x**2*y*z**3) + 3",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(x, b, z, y, a, c):\n    return 3*abs(a*b**3*c*x**2*y*z**3) + 3\n"
+    },
+    {
+        "expression": "sqrt(a*b**2*y**2) + 3*sqrt(a**3*b**2*y**3) + 5*Abs(a*b**2*y**2) + 4",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(b, y, a):\n    return sqrt(a*b**2*y**2) + 3*sqrt(a**3*b**2*y**3) + 5*abs(a*b**2*y**2) + 4\n"
+    },
+    {
+        "expression": "5*Abs(b**2*x**2*z**2) + 3*Abs(b**3*x*z**2) + 4",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(z, x, b):\n    return 5*abs(b**2*x**2*z**2) + 3*abs(b**3*x*z**2) + 4\n"
+    },
+    {
+        "expression": "4*sqrt(b**2*z**2) + 2*sqrt(b**3*z**2) + 5*Abs(b*z**2) + 3",
+        "code": "import numpy as np\nfrom sympy import Abs\ndef _lambdifygenerated(b, z):\n    return 4*sqrt(b**2*z**2) + 2*sqrt(b**3*z**2) + 5*abs(b*z**2) + 3\n"
+    },
+    {
+        "expression": "4*sqrt(c**3*x*z**3) + 5",
+        "code": "import numpy as np\ndef _lambdifygenerated(c, x, z):\n    return 4*sqrt(c**3*x*z**3) + 5\n"
+    },
+    {
+        "expression": "3*sqrt(a**2*b**2*x**2*z) + 4*sqrt(a**2*b**3*x**3*z**3) + 5",
+        "code": "import numpy as np\ndef _lambdifygenerated(a, z, x, b):\n    return 3*sqrt(a**2*b**2*x**2*z) + 4*sqrt(a**2*b**3*x**3*z**3) + 5\n"
+    }
+]
